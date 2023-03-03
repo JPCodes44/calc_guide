@@ -1,0 +1,45 @@
+<!-- block template html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JP Mak</title>
+</head>
+<body>
+    <header class="head">
+        <h1>JP's Calc 3 Guide</h1>
+        <h1><!--filler1--></h1>
+        <h1><!--filler2--></h1>
+        <ul class="nav_links">
+            <li><a href="#myaboutme">References</a></li>
+            <li><a href="#myartworks">Contact ME!</a></li> 
+        </ul>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </header>
+    <section class="hamburger_menu">
+        <ul>
+            <li><a href=#3-DimensionalSpace>3-Dimensional Space</a></li>
+            <li><a href=#PartialDerivatives>Partial Derivatives</a></li>
+            <li><a href=#ApplicationsOfPartialDerivatives>Applications of Partial Derivatives</a></li>
+            <li><a href=#MultipleIntegrals>Multiple Integrals</a></li>
+            <li><a href=#LineIntegrals>Line Integrals</a></li>
+            <li><a href=#SurfaceIntegrals>Surface Integrals</a></li>
+        </ul>
+    </section>
+    <script>
+        var hamburgerLinks = document.getElementById("hamburger_menu");
+
+        function showMenu(){
+            hamburgerLinks.style.right = "0";
+        }
+        function hideMenu(){
+            hamburgerLinks.style.right = "-100%";
+        }
+    </script>
+</body>
+</html>
