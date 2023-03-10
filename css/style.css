@@ -1,2 +1,7 @@
+.container-lg h3{
+    line-height: 180%;
+}
 
-  
+hr{
+    margin: 0 auto;
+}
