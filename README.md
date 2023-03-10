@@ -5,7 +5,7 @@ and many other exciting features within the world of math!
 I am also open to supplying help for my fellow classmates who are stuck in courses 
 like NE 241, NE 217 or any other subjects related to vector calculus.
 
-As for libraries, this website contains MathJAX for math notation, VanillaJS 
-for javascript features, and Bootstrap 5 for forms/layouts of images/text.
+As for libraries, this website contains MathJAX for math notation, three.js 
+for interactive data visualization, MATLAB for 2D/3D plots/images, and Bootstrap 5 for forms/layouts of images/text.
 
 # calc_guide
