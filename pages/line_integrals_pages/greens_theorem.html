@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,39 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 5.7 : Green's Theorem</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">Let's determine the relationship between line integrals on closed paths and double integrals.
+        <br><br>Recall that a closed curve is a curve \(C\) enclosing region \(D\).
+        <br><br>Here is a sketch of what I mean:
+        <br><br>Note that the curve is closed and straightforward, as no holes exist in region \(D\). Also note that curve \(C\) has a positive orientation if it is traced out in the counterclockwise direction. 
+        <br><br>Given curves/regions like this, we can use the following theorem:
+        <br><br>Here are some of the alternate notations that we will see in future problems assuming \(C\) satisfies the conditions of greens theorem:
+        <br><br>Let's give some examples:
+        <br><br>So how would green's theorem work for regions with holes in them? Let's first split up the area into two parts \(D_1\) \(\cup\) \(D_2\) (recall that \(\cup\) represents union which represents \(D\) containing both \(D_1\) and \(D_2\)). Let's also define the boundary of \(D_1\), which is \(C_1\) \(\cup\) \(C_3\), and \(D_2\) is \(C_2\) \(\cup\) \(\left(-C_3\right)\). However, we know that \(C_3\) and \(-C_3\) will cancel, and we will be left with the equation on the far right.
+        <br><br>We will begin by analyzing the given double integral and utilizing a fundamental property of double integrals to simplify it.
+        <br><br>Afterward, apply Green's theorem to each of these. Then, once more, use the property that allows us to separate line integrals into individual line integrals for each boundary segment.
+        <br><br>Next, we'll use the fact that,
+        <br><br>It is important to recall that changing the orientation of a curve in line integrals with respect to x and/or y will change the sign on the integral. Using this fact, we arrive at the following:
+        <br><br>Putting the integrals back together, we get:
+        <br><br>What is the main takeaway from this exercise? Although it may be a lot of work, all we accomplished was to confirm the validity of Green's Theorem, which we already knew to be true. However, this exercise demonstrated that breaking up a region into smaller sections, as shown above, causes the line integrals on the parts of the curve that lie inside the region to cancel each other out (since they are moving in opposite directions). This concept will help deal with regions that have holes in them. To illustrate this point, consider a ring-shaped region:
+        <br><br>Note how both curves are positively oriented because if we walk in the oriented direction, \(D\) will end up on our left side. However, you should also have noticed that the curve only has a positive orientation if counterclockwise. As we can see, \(C_2\) is moving in a clockwise direction. So why are both curves oriented positively? That's because, for regions with holes, there is an exception. Therefore, we will use the second definition as stated above.
+        <br><br>This passage discusses how Green's Theorem can't be used to calculate line integrals over a curve that encloses a region with a hole. The curve in question is composed of two parts, \(C_1\) and \(C_2\). However, If we cut the disk in half and rename the portions of the curve, we obtain the following sketch:
+        <br><br>Let's define the following boundaries for each of the domains:
+        <br><div class="fact">\(D_1 \rightarrow C_1 \cup C_2 \cup C_5 \cup C_6\)
+        <br>\(D_2 \rightarrow C_3 \cup C_4 \cup \left(-C_5 \right) \cup \left(-C_6 \right)\)</div>
+        Now we can sub back the domains into the double integrals for the greens theorem because there are no holes in the domain:
+        <br><br>Breaking up the integral on each piece of the boundary, we get (note that \(C_5\) and \(C_6\) cancel because there's a negative and positive version of the curve on each integral):
+        <br><br>Ultimately, we could have used Green's Theorem with regions containing holes.
+        <br><br>Let's look at an example:
+        <br><br>We will now finalize this section by computing the area of a region \(D\) using Green's Theorem:
+        <br><br>To do this, we will think of the integral in terms of Green's Theorem. So let's suppose that:
+        <br><br>From here, let's determine some functions for \(P\) and \(Q\) that will satisfy this.
+        <br><br>Here are some functions that will satisfy this:
+        <br><br>Using Green's Theorem, we can determine the area of the following region in \(D\):
+        <br><br>Where \(C\) is the boundary of region \(D\).
+        <br><br>Let's take a look at an example of this:
+    </h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

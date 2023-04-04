@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,32 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 5.2: Line Integrals Part 1</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.
+        <br><br>For Line integrals, you must become fluent in parameterizing a set of equations for a given curve in \(\mathbb{R}^3\) and \(\mathbb{R}^2\). If you have not mastered the subject yet, please go back and review parameterization. 
+        <br><br>With that out of the way, here are some primary curves and parameterizations, as well as their limits:
+        <br><br>In general, a line integral is defined by the parameterization:
+        <br><br>Which is then put into a vector function:
+        <br><br>Within the interval \([a,b]\).
+        <br><br>For defining the final equation of the line integral, recall the arc length of the interval from \(a,b\) was given the parameterization above:
+        <br><br>We will use the arc length to define \(ds\) or, in other words, the differential surface.
+        <br><br>Knowing this, we can form the final line integral:
+        <br><br>However, we can simplify the following arc length equation regarding the vector function using the norm. 
+        <br><br>Let's give some examples:
+        <br><br>Now we need to talk about line integrals containing piecewise smooth curves.
+        <br><br>Here is an illustration describing these curves:
+        <br><br>Performing a line integral for this entire graph would not be the most effective. However, splitting up the line integrals into smaller ones for each section would make the process much more straightforward as follows:
+        <br><br>Let's see an example of this.
+        <br><br>We can also determine the line integral of a curve given a line segment from two points. 
+        <br><br>For piecewise smooth curves, we can split the curve into multiple line integrals as such:
+        <br><br>Here is the example graph of a piecewise curve. 
+        <br><br>One thing we have yet to talk about regarding line integrals is the orientation at which we move across the boundaries. For example, we will determine an orientation for the direction of how the curve is being traced out. We want the initial bound to be \(A\) and the last \(B\). This boundary will be our positive orientation. Suppose we switch the order of \(A\) and \(B\) to flip the direction on its head. As a result, the line integral will now contain a negative instead of a positive sign due to the change in orientation. 
+        <br><br>In other words, let's define this fact:
+        <br><br>So far, we have only covered line integrals in \(\mathbb{R}^2\), but we can also extend the idea into \(\mathbb{R}^3\).
+        <br><br>Everything pretty much stays the same, except that we define the line integral as follows:
+        <br><br>Given that the norm of the vector function is equal to:
+        <br><br>Let's do an example of line integrals in \(\mathbb{R}^3\):
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

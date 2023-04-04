@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,44 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 1.3 : Quadric Surfaces</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">Although lines and planes are essential concepts in calculus, many other types of surfaces are also commonly used. Therefore, we should explore these surfaces to understand them better. In the previous sections, we covered lines and planes in three dimensions.
+        <h3 class="text-start mb-4 fs-6">In this section, we will focus on quadric surfaces, which are surfaces described by second-degree equations in three variables. Any equation expressed in this general form below is considered a quadric surface:
+        <br><br>Given all of these terms, there is no way we can derive a list for every Quardic surface. However, we can list the most fundamental shapes in calculus three.
+        <br><br>Ellipsoid <br>The general equation for an ellipsoid:
+        <br><br>The sketch for a typical ellipsoid:
+        <br><br>If \(a=b=c\), then we will have a sphere.
+        <br><br>Please note that the presented formula solely applies to ellipsoids centred on the origin. Nonetheless, ellipsoids may have distinct centers. Therefore, to make this section less complicated, we will direct our attention toward surfaces centred on the origin to a certain extent.
+        <br><br>Cone <br>The general equation for a cone:
+        <br><br>The sketch for a typical cone:
+        <br><br>It's important to mention that the object we call a cone is more of an hourglass shape than a typical cone. However, the upper and lower sections of the hourglass can still be considered cones as they are typically known.
+        <br><br>This raises the question of what to do if we only need the upper or lower part of the object, such as a traditional cone. The answer is quite simple. First, we need to solve the given equation for \(z\) using the following steps:
+        <br><br>Since we know the equation for \(z\) is a square root, the equation of a cone can only be an upper or lower cone depending on the sign of the square root.
+        <br><br>It's worth noting that the given equation represents a cone that opens along the \(z\)-axis. However, if we need an equation for a cone that extends along a different axis, we need to modify the equation slightly. This will also apply to the other surfaces discussed in this section. In the case of a cone, the variable that appears alone on one side of the equation determines the cone's axis. So, for example, a cone that opens along the \(x\)-axis will have an equation that looks like this:
+        <br><br>We will only provide some alternative formulas for the remaining surfaces we cover. However, we'll indicate how each formula should be modified to change the orientation of the surface.
+        <br><br>Cylinder <br>The general equation for a cylinder:
+        <br><br>The sketch for a typical cylinder:
+        <br><br>This cylinder has an elliptical cross-section. However, if the values of \(a)\ and \(b\) are equal, then the cross-section of the cylinder will be circular. As for the general form of an ideal cylinder with a circular cross-section, the equation is:
+        <br><br>Here is a sketch of a typical cylinder with an ellipse cross-section.
+        <br><br>The cylinder will be positioned along the axis corresponding to the variable not included in the equation.
+        <br><br>However, it is essential to note that this should not be mistaken for a circle. The equation represents a circle in 2d space but is a cylinder in 3d space.
+        <br><br>Hyperboloid of One Sheet <br>The general equation for a Hyperboloid:
+        <br><br>The sketch for a typical Hyperboloid:
+        <br><br>The variable containing a negative coefficient will show what axis the shape is centred on.
+        <br><br>Hyperboloid of Two Sheets <br>The general equation for a Hyperboloid:
+        <br><br>The sketch for a typical Hyperboloid:
+        <br><br>The variable determines the axis around which the graph is centred with a positive coefficient.
+        <br><br>It is essential to observe that the sole distinction between the hyperboloid of one sheet and the hyperboloid of two sheets is the signs in front of the variables; they are opposite.
+        <br><br>Moreover, we can apply the same technique as we did with cones by solving the equation for 'z.' This will enable us to obtain the equation for the upper part of the hyperboloid for the positive portion and the equation for the lower portion.
+        <br><br>Elliptic Paraboloid <br>Here is the equation of an elliptic paraboloid.
+        <br><br>Note that if \(a=b\), we will have a cross-section of a circle with a 3d shape of a circular dome.
+        <br><br>Here is a sketch of a typical elliptic paraboloid.
+        <br><br>The axis along which the paraboloid opens up is determined by the variable not squared in this situation. Moreover, the direction in which the paraboloid opens is influenced by the sign of the variable c. If c is positive, the paraboloid opens up; if c is negative, the paraboloid opens downwards.
+        <br><br>Hyperbolic Paraboloid <br>Here is the equation of a hyperbolic paraboloid.
+        <br><br>The graphs of these shapes resemble a saddle, and their orientation is determined by the sign of the value of \(c\). When \(c\) is positive, the surface of the graph opens up in a particular direction. These paraboloids can be shifted up or down easily by adding or subtracting a constant from the left side of the equation.
+        <br><br>For example:
+        <br><br>An elliptic paraboloid opens downward if the coefficients are negative on \(x\) and \(y\) instead of \(z\). The above function starts at \(z=6\) and not \(0\).</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,23 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 5.1 : Vector Fields</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">In math notation, a vector field can be defined as a function that assigns a vector to each point in a region of space. For example, let's say we have an area of space called D, a vector field F would be represented as:
+        <br><br>\(F: D \rightarrow \mathbb{R}^3\)
+        <br><br>Where \(\mathbb{R}^3\) is the three-dimensional real vector space and \(F \left(x,y,z \right) = f_1 \left(x,y,z \right), f_2 \left(x,y,z \right), f_3 \left(x,y,z \right)\) is a vector at the point \(\left(x,y,z \right)\) in \(D\).
+        <br><br>Alternatively, we can also represent a vector field using differential operators. For example, if the vector field \(F\) is a differentiable function, we can write it as:
+        <br><br>\(F = F_1 \left(x,y,z \right)\vec{i} + F_2 \left(x,y,z \right)\vec{j} + F_3 \left(x,y,z \right)\vec{k}\)
+        <br><br>Where \(\vec{i}\), \(\vec{j}\), \(\vec{k}\) are the standard unit vectors in the \(x\), \(y\), and \(z\) directions, and \(F_1\), \(F_2\), and \(F_3\) are scalar functions that give the vector field's \(x\), \(y\), and \(z\) components.
+        <br><br>We can then use differential operators such as the gradient \(\left(\nabla\right)\), divergence \(\left(div \right)\), and curl \(\left(curl \right)\) to analyze the behaviour of the vector field.
+        <br><br>Recall the gradient vector:
+        <br><br>Let's do some examples containing these vectors.
+        <br><br>Let's do an example that defines the relationship between the contours and the vector field of a function.
+        <br><br>The relationship defined by this graph shows that the vectors increase as the contour curves get closer together. 
+        <br><br>That means as \(k\) is increased by a fixed amount, the faster function changes at that point. Furthermore, recall that the gradient vector gives the direction of the most rapid rate of change at a specific point. 
+        <br><br>The final topic in this section is conservative vector fields. A vector field is called conservative if it can be expressed as the gradient of some function. This function is called a potential function. In other words, a vector field is conservative if it is also a gradient vector field for some function. For example, the vector field \(y \vec{i} + x \vec{j}\) is a conservative vector field with a potential function of \(f \left(x,y \right) = xy\). 
+        <br><br>However, the vector field \(-y \vec{i} + x \vec{j}\) is not conservative since there is no function \(f\) such that \(F = \nabla f\). The proof of this will be provided in a future section, along with a method for finding the potential function for a conservative vector field.
+        </h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

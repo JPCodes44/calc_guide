@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -73,7 +73,7 @@
                         </li>
                     </ul>
                 </div>
-                <form class="d-flex">
+                <form action="search_engine.js" method="POST" class="d-flex">
                     <input type="text" class="form-control me-2">
                     <button type="submit" class="btn btn-primarys">Search</button>
                 </form>
@@ -92,9 +92,36 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 2.5: Lagrange Multipliers</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">Previously we only accounted for finding absolute extrema within the boundary but what about the interior of a function?
+        <br><br>This section presents an alternative approach to optimize a function while considering a given constraint(s). These constraints could be equations that define the boundary of a region, but the focus of this section is on something other than such problems. The method described here only requires a general constraint and does not concern itself with the origin of the constraint.
+        <br>The goal is to find the minimum and maximum value of a function \(f \left(x, y, z\right)\) while satisfying a constraint \(g \left(x, y, z \right) = k\). The constraint may or may not describe the boundary of a region. Although the process is relatively straightforward, it can still be daunting.
+        <br><br>Let's first define the method of Lagrange Multipliers:
+        <br><div class="proof">Then, solve the following system of equations.
+        <br><br>Plug in the solutions, \(\left(x,y,z \right)\), from the first step into \(f \left(x,y,z \right)\) and identify the max and min values given that they exist and the gradient of the constraint does not equal \(0\) at \(\left(x,y,z \right)\). 
+        <br><br>The constant lambda is called the Lagrange multiplier.
+        <br><br>We will solve for \(f_x\), \(f_y\), and \(f_z\) giving the following system of equations:</div>
+        Note that in some cases, minimums and maximums will not exist in every case, so we will have to check for those first.
+        <br><br>To provide a physical explanation for the equations above, let's examine the minimum and maximum values of the function \(f \left(x,y \right) = 8x^2 - 2y\) subject to the constraint \(x^2 + y^2 = 1\). In problem #2 of the practice exercises for this section, it will be shown that the minimum value of \(f \left(x,y \right)\) is \(-2\), which occurs at \(\left(0,1 \right)\), while the maximum value of \(f \left(x,y \right)\) is \(8.125\), which occurs at \(\left(-3 \sqrt{ \frac{7}{8} }, -1/8 \right)\) and \(\left(3\sqrt{\frac{7}{8}},-1/8 \right)\).
+        <br><br>Here is a sketch of the following constraint and \(f \left(x,y \right) = k\) for various values of \(k\).
+        <br><br>Note that solutions must lie somewhere on the graph of \(g\) (the constraint), which is \(x^2+y^2=1\). 
+        <br><br>From the given graphs, we can observe that the minimum or maximum values of the function \(f \left(x,y \right)\) occur when the graph of \(f \left(x,y \right) = k\) intersects with the constraint graph at a tangent point where their normal vectors are parallel. This is because the point of intersection must be on the constraint graph. To find the minimum or maximum value of \(f \left(x,y \right)\), we need to solve the system of equations, as mentioned earlier.
+        <br><br>It is worth noting that while the above justification was explained in the context of a two-dimensional system, the same idea applies to higher dimensions where we work with surfaces instead of curves. In such cases, the points that give the minimum and maximum values of the surfaces would be parallel, and so would be their normal vectors.
+        <br><br>In the above example, we did not calculate the values of \(\lambda\) as it is unnecessary to determine whether the point is a minimum or a maximum. Hence, in such problems, we often do not bother finding the value of \(\lambda\). On the other hand, in some cases, we may require the value of \(\lambda\) to solve the system, but we won't use it beyond finding the point.
+        <br><br>Let's take a look at another example. 
+        <br><br>In the examples above, the general formula for solving these problems comes as follows:
+            <ol>
+                <li>Gather all of the equations needed to solve each variable.</li>
+                <li>Find what each variable equals in each equation.</li>
+                <li>Set the variables equal to the same value in the same equation.</li>
+                <li>Solve for one of the unknowns</li>
+                <li>Repeat the process from step 4 for each possible case of equations</li>
+                <li>Write down all the possible extrema from all of the cases of equations.</li>
+                <li>Plug in the points in f and determine the max and min values.</li>
+                <li>Plug in the points for the boundaries into f as well.</li>
+            </ol>
+        </h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

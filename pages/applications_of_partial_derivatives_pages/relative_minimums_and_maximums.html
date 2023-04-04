@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,32 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 3.2 : Relative Extrema</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">In this section, we will define the minimum and maximums functions and identify relative minimums and relative maximums for functions of two variables.
+        <br><br>It should be noted that a relative minimum of a function is not necessarily the smallest value that the function can take but rather means that in a particular region around the point \(\left(a, b \right)\), the function will always be greater than or equal to \(f \left(a, b \right)\). However, the function can be smaller outside of that region. Similarly, a relative maximum only implies that around \(\left(a, b \right)\), the function will always be smaller than or equal to \(f \left(a,b \right)\), but it can be larger outside of that region. 
+        <br><br>When extending the concept of critical points to functions of two variables, a critical point of the function \(f \left(x \right)\) was a value x=c such that either \(f' \left(c \right) = 0\) or \(f' \left(c \right)\) doesn't exist. A similar definition exists for critical points of functions of two variables.
+        <br><br>To prove the first part, suppose \(\nabla f=0\) and sub in the definition for each component. 
+        <br><br>Note that both components in the definition MUST be \(0\), or it is not a critical point. 
+        <br><br>Fact:<div class="fact">If the point \(\left(a,b \right)\) is relative extrema of the function \(f \left(x,y \right)\) and its first order derivatives of \(f \left(x,y \right)\) exist at \(\left(a,b \right)\), then \(\left(a,b \right)\) is a critical point of \(f \left(x,y \right)\) giving \(\nabla f \left(a,b \right) = \vec{0}\).</div>
+        <br>To prove this fact, we will use Fermat's Theorem:
+        <br><br>Proof:<div class="proof">Let's define \(g \left(x \right) = f \left(x,b \right)\) given that \(f \left(x,y \right)\) has relative extrema at \(\left(a,b \right)\). That means \(g \left(x \right)\) has a relative extremum at \(x = a\), and by Fermat's Theorem, we can say that \(g' \left(a \right) = 0\) because \(x = a\) is the relative extrema. All of these facts mean that \(\nabla f \left(a,b \right) = \vec{0}\), and so \(f \left(x,y \right)\) has a critical point at \(\left(a,b \right)\). </div>
+        Note that all critical points are NOT relative extrema. However, all relative extrema will be critical points of the function.
+        <br><br>For example, let's say we have a surface in \(\mathbb{R}^3\):
+        <br><br>Notice that the slope at the origin is \(0\) and is also a critical point. Does that mean the point is a maximum or a minimum? No. It will be called a saddle point as all four quadrants contain a higher value than \(f \left(0,0 \right)\). 
+        <br><br>So how can we determine if a critical point is a saddle point?
+        <br><br>Let's give the following facts:
+        <br><div class="fact">Suppose that \(\left(a,b \right)\) is a critical point of \(f \left(x,y \right)\) and that the second-order partial derivatives are continuous in some region that contains \(\left(a,b \right)\). Next, define,
+        \(D = D \left(a,b \right) = f_{xx} \left(a,b \right) f_{yy} \left(a,b \right) - [f_{xy} \left(a,b \right)]^2\).
+        <br><br>We then have the following classifications of the critical point:
+        <br><br><ol>
+            <li>If \(D > 0\) and \(f_{xx} \left(a,b \right) > 0\) then there is a relative minimum at \(\left(a,b \right)\).</li>
+            <li>If \(D > 0\) and \(f_{xx} \left(a,b \right) < 0\) then there is a relative maximum at \(\left(a,b \right)\).</li>
+            <li>If \(D > 0\) then the point\(\left(a,b \right)\) is a saddle point.</li>
+            <li>If \(D = 0\), the point \(\left(a,b \right)\) may be a relative minimum, maximum, or saddle point, other techniques need to be used to classify the critical point.</li>
+        </ol></div>
+        <br>Keep in mind that if both \(D > 0\), then both \(f_{xx} \left(a,b \right)\) and \(f_{yy} \left(a,b \right)\) will have the same sign.
+    </h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

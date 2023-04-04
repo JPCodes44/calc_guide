@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,17 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 6.4 : Stoke's Theorem</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">In this section, we'll learn about a theorem that's like a more complex version of Green's Theorem. You might remember that Green's Theorem relates a line integral to a double integral over some area. This new theorem, however, relates a line integral to a surface integral. Before giving the theorem, we must discuss the curve used in the line integral.
+        <br><br>Let's suppose we have the following surface with the indicated normal vectors:
+        <br><br>The edge of a surface has a curve called the boundary curve, and the surface's orientation determines the boundary curve's positive orientation. To figure out the positive orientation of the curve, imagine walking along it with your head pointing in the same direction as the unit normal vectors while the surface is on the left. This is the direction that is considered positive. 
+        <br><br>With this definition in mind, we can now introduce Stokes' Theorem.
+        <br><br>Stokes' Theorem:<div class="fact">Let \(S\) be an oriented, smooth, simple, and closed curve bounded by \(C\) with a positive orientation. Also, let \(F\) be a vector field then, </div>
+        <br>Note that this theorem can simplify large surface integrals bounded by the curve \(C\).
+        <br><br>Let's take a look at a couple of examples. 
+        <br><br>In both these examples, we had to deal with integrals that needed to be more tricky. But thanks to Stokes' Theorem, we could make those integrals more manageable.
+        </h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

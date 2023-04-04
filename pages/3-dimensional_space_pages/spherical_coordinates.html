@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,18 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 1.12 : Spherical Coordinates</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">Let's start with a sketch of spherical coordinates:
+        <br><br>As you can see, \(p\) is the radius of a sphere, \(\theta\) measures the amount of rotation around the \(z\)-axis starting from the \(x\)-axis, and \(\phi\) measures the vertical rotation starting from the upper \(z\)-axis.
+        <br><br>Let's look at a sketch of spherical coordinates on the \(xy\) plane:
+        <br><br>It is established that the angle formed between the \(z\)-axis and \(p\) is \(\phi\). Moreover, some basic geometrical calculations show that the angle between \(p\) and the vertical side of a right-angled triangle is also \(\phi\).
+        <br><br>With some trig, we get:
+        <br><br>Given these formulas, we can then make the complete set of conversion formulas from cylindrical to spherical:
+        <br><br>Note that using the Pythagorean theorem, we get:
+        <br><br>From cartesian to spherical, recall the cylindrical conversion formulas from the previous section.
+        <br><br>Now we can sub in for \(r\) and \(z\); we get the conversion formulas for cartesian to spherical.
+        <br><br>Just like with cylindrical, we can convert backwards from cartesian to spherical by knowing this formula:</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

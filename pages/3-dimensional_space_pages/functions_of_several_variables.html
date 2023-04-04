@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,24 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 1.4 : Functions of Several Variables</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">The basic ideas of functions containing more than one variable involve functions of two variables in \(\mathbb{R}^3\). An example would be a quadric surface. For example, here is the graph:
+        <br><br>Another frequently encountered graph in this course is that of a plane, and we have a standard convention for graphing planes that makes them easier to visualize.
+        <br><br>Recall that the equation of a plane is:
+        <br><br>We can also solve for \(z\), which would give us the function notation:
+        <br><br>To graph a plane, we usually locate its intersection points with the three axes and then connect those points to form a triangle. This triangle represents a portion of the plane, giving us a reasonable idea of its overall shape. For instance, we want to graph the plane defined by an equation:
+        <br><br>for graphing we can replace \(f(x,y)\) for \(z\):
+        <br><br>Now we can use traces to set \(x,y = 0\) to locate the intersection on the \(z\)-axis and \(x,z = 0\) to locate the facts on the \(y\)-axis etc.
+        <br><br>Here is the graph of the plane.
+        <br><br>The domains of functions containing more than one variable would have to be intervals in terms of \(x\) and \(y\) instead of a single variable in \(\mathbb{R}^1\).
+        <br><br>The following paragraph discusses the concept of level curves, also known as contour curves, which are two-dimensional curves obtained by setting a function equal to a constant value. For example, if the function is given by \(z=f(x,y)\), then the equation of the level curves is \(f(x,y)=k\), where k is any constant number.
+        <br><br>In some cases, the equation may be in the form \(f(x,y,z)=0\), and in these situations, the equation of the level curves is \(f(x,y,k)=0\). An example of level curves is the elevation map of a piece of land, which gives the contour curves for the function representing the elevation in the area.
+        <br><br>Let's do a quick example of this.
+        <br><br>Imagine contours as the intersections of the surface moving through the surface as the \(k\) value is increasing/decreasing.
+        <br><br>We will look at level surfaces for functions containing three variables, where \(k = f(x,y,z)\) and k can include any number.
+        <br><br>This last section introduces the concept of traces, which are curves that represent the intersection of a surface and a plane given by \(x=a\) or \(y=b\). Traces are similar to contours, which are the intersection of a surface with a plane \(z=k\), as explained earlier. In other words, contours and traces represent the intersection of a surface with a plane, but contours are obtained by varying the value of \(z\), while traces are obtained by changing the value of \(x\) or \(y\).
+        <br><br>Let's take a quick look at an example of traces.</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,10 +92,29 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 1.2 : Equations of Planes</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
-    </div>
+        <h3 class="text-start mb-4 fs-6">In the last section, we looked at a few equations of planes that did not contain three variables. In this section, we will talk about deriving a more general equation for 3D planes.
+        <br><br>Firstly, we know a point on the plane \(P_0=(x_0,y_0,z_0)\) and a normal vector orthogonal (90 degrees) to that same plane. So let's also set \(r_0\) and \(r\) as position vectors for \(P_0\) and \(P\).
+        <br><br>Here is a graph of the following planes and vectors:
+        <br><br>Notice how \(r-r_0\) forms a vector that is parallel and onto the plane. In linear algebra, we learned that the dot product of two orthogonal vectors is \(0\). This allows us to form a vector equation for the plane consisting of the normal vector and \(r-r_0\):</h3>
+        <h3 class="text-center mb-4 fs-6">\(\vec n\centerdot \left( {\vec r - \overrightarrow {{r_0}} } \right) = 0\hspace{0.25in}\hspace{0.25in} \Rightarrow \hspace{0.25in}\hspace{0.25in}\vec n\centerdot \vec r = \vec n\centerdot \overrightarrow {{r_0}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">We will start with a vector equation in terms of \(a\), \(b\), and \(c\) and the starting/end \(x\),\(y\), and \(z\) values.</h3>
+        <h3 class="text-center mb-4 fs-6">\(\begin{align*}\left\langle {a,b,c} \right\rangle \centerdot \left( {\left\langle {x,y,z} \right\rangle  - \left\langle {{x_0},{y_0},{z_0}} \right\rangle } \right)&  = 0\\ \left\langle {a,b,c} \right\rangle \centerdot \left\langle {x - {x_0},y - {y_0},z - {z_0}} \right\rangle  & = 0\end{align*}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Computing the dot product, we get:
+        <br><div class="fact"><h3 class="text-center mb-0 fs-6">\(a\left( {x - {x_0}} \right) + b\left( {y - {y_0}} \right) + c\left( {z - {z_0}} \right) = 0\)</h3></div>
+        If given an equation of planes, we can easily find the normal vector by looking at the coefficients \(a\), \(b\), and \(c\).
+        <br><br>Let's work some examples.
+        <br><div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 1</h3>
+        <h3 class="sameline text-start mb-0 fs-6">Determine the equation of the plane containing the points \(P = \left(2,-1,3 \right)\), \(Q = \left(-1,4,1 \right)\) and \(R = \left(0,-2,5 \right)\).</h3>
+        <details>
+            <summary>
+                Show Solution
+            </summary>
+            <h3 class="text-start mb-0 fs-6"></h3>
+        </details>
+        </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

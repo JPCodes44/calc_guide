@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Calc Guide</title>
   </head>
@@ -92,9 +92,27 @@
         </div>
 
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
-        <h3 class="text-start fs-5">Chapter 1 : 3-Dimensional Space</h3>
+        <h3 class="text-start fs-5">Chapter 2.1 : Limits</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.</h3>
+        <h3 class="text-start mb-4 fs-6">This section focuses on limits that involve functions of multiple variables. Therefore, the discussion will primarily concentrate on the limits of functions with two variables.
+        <br><br>However, the concepts presented can be extended to functions with more than two variables.
+        <br><br>Before delving into this topic, briefly review how the limits of functions of one variable work.
+        <br><br>Provided,
+        <br><br>Also, recall that,
+        <br><br>This is a right-hand limit, meaning only values of \(x\) greater than a are considered.</h3>
+        <br><br>As for the left-hand limit, only values of \(x\) less than \(a\) are considered.</h3>
+        <br><br>These limits are typically used when dealing with non-continuous functions where each side of the discontinuity displays a different limit.</h3>
+        <br><br>For multi-variables, we can have two variables converge at different values.</h3>
+        <br><br>For example:</h3>
+        <br><br>For simplicity's sake, we will use the 2nd notation more often than the 1st.</h3>
+        <br><br>Note that in the 2nd notation, we are trying to determine what \(f\left(x,y \right)\) is doing as we move \(\left(x,y \right)\) towards \(\left(a,b \right)\) without actually letting \(\left(x,y \right)=\left(a,b \right)\).</h3>
+        <br><br>The notation used here needs to be revised. A limit must be well-defined so that the function produces the same outcome regardless of the approach towards the point \(\left(a, b \right)\).</h3>
+        <br><br>In short, we need to check infinite paths to ensure the function has the same output regardless of the path we use to approach \(\left(a,b \right)\).</h3>
+        <br><br>So let's use one of the main ideas from Calculus 1 to help us:</h3>
+        <br><br>If a function is continuous at a point, we can evaluate the limit of the function at that point by simply substituting the point into the function.</h3>
+        <br><br>Even for multivariable functions, the standard functions known to be continuous remain continuous as long as we avoid dividing by zero, taking square roots of negative numbers, or taking logarithms of zero or negative numbers.</h3>
+        <br><br>However, it is essential to remember the concept of paths, which can help us determine if a limit does not exist. By finding two paths that lead to different values as we approach the point, we can conclude that the limit does not exist.</h3>
+        <br><br>Let's look at some examples:</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
