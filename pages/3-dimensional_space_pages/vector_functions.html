@@ -103,17 +103,37 @@
         <br><br>The vector functions in the above were in the form:
         <br><br>In the above examples, we are just sketching the \(y=g(x)\) graph, so let's look at a couple of other models that do not follow this trend.
         <br><br>Recall the ellipse vector function \(r(t)= \left\langle{6 cost, 3sint}\right\rangle\). Notice that the \(x\) component represents \(6cost\) and the \(y\) component represents \(3sint\). So if we make an equation for each of these components, we get the following:
+        <br><br>\(x = 6\cos t\hspace{0.25in}\hspace{0.25in}y = 3\sin t\)
         <br><br>These concepts look similar to parametric equations, as we saw in previous calculus courses.
         <br><br>This is a fundamental concept in the analysis of vector functions. Representing any vector function using parametric equations defining the same graph is possible. Specifically, a two-dimensional vector function, \(r(t) = \left\langle{f(t), g(t)}\right\rangle\), can be expressed as a set of parametric equations, where:
         <br><br>Also, a vector function in R3, \(r(t)=\left\langle{f(t),g(t),h(t)}\right\rangle\), can be broken down into the parametric equations:
+        <br><br>\(x = f\left( t \right)\hspace{0.25in}y = g\left( t \right)\hspace{0.25in}z = h\left( t \right)\)
         <br><br>Don't become overly enthusiastic that we're now examining parametric equations in \(\mathbb{R}^3\). They function in the same manner as the parametric equations in \(\mathbb{R}^2\). The only distinction is that we now have an additional component to consider.
         <br><br>Note that if there is a sine and a cosine with the same coefficient and a fixed number, we will have a circle centred on the axis given by the fixed number.
         <br><br>Let's look at a modified example of this:
-        <br><br>You can create many different shapes, like an ellipse if you replace the fixed constant with \(t\).
+        <div class="proof">
+            <h3 class="sameline text-start fw-bold mb-0 fs-6">Example 1</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Sketch the graph of the following vector function:</h3>
+            <h3 class="sameline text-start mb-0 fs-6">\(\vec{r} \left(t \right) = \left\langle(2-5t, 3+t, 3 \right\rangle)\)</h3>
+        <details>
+            <summary class="show">
+                Show Solution
+            </summary>
+            <hr>
+            <br>
+            <h3 class="text-start mb-0 fs-6">We can see that this is an equation of the line passing through the point (2, 3, 3) and is parallel to the vector v=(-5, 1, 0).
+            <br><br>To plot the line on a graph, we need to locate a point on the line and draw a parallel vector. We assume that the vector is situated on the line and originates from the point on the line. To complete the line sketch, we extend the parallel vector to form the entire line.
+            <br><br>Here is a sketch.       
+        </h3>
+        </div>
+        You can create many different shapes, like an ellipse if you replace the fixed constant with \(t\).
         <br><br>Before diving into vector functions, Obtaining a particular formula necessary for starting vector functions would be beneficial.
         <br><br>As mentioned earlier in this section, having vector functions with two variables is possible. In such cases, the graphs of these vector functions will be surfaces. To avoid forgetting this fact, let's work through an example that involves a vector function with two variables.
         <br><br>For the final topic of this section, let's focus on parameterizing vector functions. Given any function of one or two variables, we can always write the vector form in terms of just one or two variables like so:
-        <br><br>This will be a crucial idea in calculus three, as fluency in parametric equations is necessary for surface and line integrals.
+        <h3 class="text-center mb-4 fs-6">\(\vec r\left( x \right) = x\,\vec i + f\left( x \right)\,\vec j\hspace{0.25in}\hspace{0.25in}\hspace{0.25in}\vec r\left( y \right) = h\left( y \right)\,\vec i + y\,\vec j\)
+        <br><br>Or
+        <br><br>\(\begin{array}{c}\vec r\left( {x,y} \right) = x\,\vec i + y{\kern 1pt} \vec j + g\left( {x,y} \right)\,\vec k\hspace{0.25in}\hspace{0.25in}\hspace{0.25in}\vec r\left( {y,z} \right) = g\left( {y,z} \right)\,\vec i + y{\kern 1pt} \vec j + z\,\vec k\\ \vec r\left( {x,z} \right)  = x\,\vec i + g\left( {x,z} \right){\kern 1pt} \vec j + z\,\vec k\end{array}\)</h3>
+        <br>This will be a crucial idea in calculus three, as fluency in parametric equations is necessary for surface and line integrals.
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

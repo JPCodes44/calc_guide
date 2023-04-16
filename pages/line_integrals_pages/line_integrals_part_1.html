@@ -97,27 +97,87 @@
         <h3 class="text-start mb-4 fs-6">In this chapter, we will take a look at coordinate systems in \(\mathbb{R}^3\). The concepts learned in this section will be very essential as most of the calculations done in Calc 3 is in 3 Dimensional space.
         <br><br>For Line integrals, you must become fluent in parameterizing a set of equations for a given curve in \(\mathbb{R}^3\) and \(\mathbb{R}^2\). If you have not mastered the subject yet, please go back and review parameterization. 
         <br><br>With that out of the way, here are some primary curves and parameterizations, as well as their limits:
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th><h3 class="text-center mb-0 fs-6">Curve</h3></th>
+                <th><h3 class="text-center mb-0 fs-6">Parametric (Counter-Clockwise)</h3></th>
+                <th><h3 class="text-center mb-0 fs-6">Parametric (Clockwise)</h3></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><h6 class="text-center mb-0 fs-6">\(\begin{array}{c} \displaystyle \frac{{{x^2}}}{{{a^2}}} + \frac{{{y^2}}}{{{b^2}}} = 1 \\ \mbox{(Ellipse)}\end{array}\)</h6></th>
+                <td><h6 class="text-center mb-0 fs-6">\(\begin{array}{c} x = a\cos \left( t \right)\\ y = b\sin \left( t \right)\\ 0 \le t \le 2\pi \end{array}\)</h3></td>
+                <td><h6 class="text-center mb-0 fs-6">\(\begin{array}{c} x = a\cos \left( t \right)\\ y =  - b\sin \left( t \right)\\ 0 \le t \le 2\pi \end{array}\)</h3></td>
+              </tr>
+              <tr>
+                <th><h3 class="text-center mb-0 fs-6">\(\begin{array}{c}{x^2} + {y^2} = {r^2} \\ \mbox{(Circle)}\end{array}\)</h3></th>
+                <td><h3 class="text-center mb-0 fs-6">\(\begin{array}{c} x = r\cos \left( t \right)\\ y = r\sin \left( t \right)\\ 0 \le t \le 2\pi \end{array}\)</h3></td>
+                <td><h3 class="text-center mb-0 fs-6">\(\begin{array}{c}  x = r\cos \left( t \right)\\  y =  - r\sin \left( t \right)\\  0 \le t \le 2\pi \end{array}\)</h3></td>
+              </tr>
+              <tr>
+                <th><h3 class="text-center mb-0 fs-6">\(y = f\left( x \right)\), \(x = g\left( y \right)\)</h3></th>
+                <td><h3 class="text-center mb-0 fs-6">\(\begin{align*}x & = g\left( t \right)\\ y & = t \end{align*}\) </h3></td>
+                <td><h3 class="text-center mb-0 fs-6">\(\begin{align*}x & = g\left( t \right)\\ y & = t \end{align*}\)</h3></td>
+              </tr>
+              <tr>
+                <th><h3 class="text-center mb-0 fs-6">\(y = f\left( x \right)\), \(x = g\left( y \right)\)</h3></th>
+                <td><h3 class="text-center mb-0 fs-6">\(\begin{align*}x & = g\left( t \right)\\ y & = t \\ \\ x & = t\\ y & = f\left( t \right)\end{align*}\)</h3></td>
+                <td><h3 class="text-center mb-0 fs-6">\(\begin{align*}x & = g\left( t \right)\\ y & = t \\ \\ x & = t\\ y & = f\left( t \right)\end{align*}\)</h3></td>
+              </tr>
+              <tr>
+                <th><h3 class="text-center mb-0 fs-6">\(\begin{array}{l}\mbox{Line Segment From} \\ \left( {{x_0},{y_0},{z_0}} \right)  \mbox{ to}  \\ \left( {{x_1},{y_1},{z_1}} \right) \end{array}\)</h3></th>
+                <td><h3 class="text-center mb-0 fs-6">\(\begin{array}{c} \vec r\left( t \right) = \left( {1 - t} \right)\left\langle {{x_0},{y_0},{z_0}} \right\rangle  + t\left\langle {{x_1},{y_1},{z_1}} \right\rangle \,\,\,,\,\,0 \le t \le 1 \\ \mbox{or} \\ \begin{array}{l} \begin{aligned} x & = \left( {1 - t} \right){x_0} + t\,{x_1}\\ y & = \left( {1 - t} \right){y_0} + t\,{y_1}\\ z & = \left( {1 - t} \right){z_0} + t\,{z_1} \end{aligned} & , \,\,\,\,\,\, 0 \le t \le 1 \end{array} \end{array}\)</h3></td>
+                <td><h3 class="text-center mb-0 fs-6">Same as Counter-Clockwise</h3></td>
+            </tr>
+            </tbody>
+          </table>
         <br><br>In general, a line integral is defined by the parameterization:
-        <br><br>Which is then put into a vector function:
-        <br><br>Within the interval \([a,b]\).
-        <br><br>For defining the final equation of the line integral, recall the arc length of the interval from \(a,b\) was given the parameterization above:
-        <br><br>We will use the arc length to define \(ds\) or, in other words, the differential surface.
+        <h3 class="text-center mb-4 fs-6">\(x = h\left( t \right)\hspace{0.25in}y = g\left( t \right)\hspace{0.25in}\,\,\,\,a \le t \le b\)</h3>
+        <h3 class="text-start mb-4 fs-6">Which is then put into a vector function:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\vec r\left( t \right) = h\left( t \right)\,\vec i + g\left( t \right)\vec j\hspace{0.25in}\hspace{0.25in}a \le t \le b\)</h3>
+        <h3 class="text-start mb-4 fs-6">Within the interval \([a,b]\).</h3>
+        <div class="fact">
+            <h3 class="text-start mb-4 fs-6">The <b>line integral</b> of \(f \left(x,y \right)\) along \(C\) is,</h3>
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle\int\limits_{C}{{f\left( {x,y} \right)\,ds}}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">For defining the final equation of the line integral, recall the arc length of the interval from \(a,b\) was given the parameterization above:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle L = \int_{{\,a}}^{{\,b}}{{ds}}\,\,,\hspace{0.25in}{\mbox{where }}ds = \sqrt {{{\left( {\frac{{dx}}{{dt}}} \right)}^2} + {{\left( {\frac{{dy}}{{dt}}} \right)}^2}} \,dt\)</h3>
+        <h3 class="text-start mb-4 fs-6">We will use the arc length to define \(ds\) or, in other words, the differential surface.
         <br><br>Knowing this, we can form the final line integral:
-        <br><br>However, we can simplify the following arc length equation regarding the vector function using the norm. 
-        <br><br>Let's give some examples:
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle\int\limits_{C}{{f\left( {x,y} \right)\,ds}} = \int_{{\,a}}^{{\,b}}{{f\left( {h\left( t \right),g\left( t \right)} \right)\sqrt {{{\left( {\frac{{dx}}{{dt}}} \right)}^2} + {{\left( {\frac{{dy}}{{dt}}} \right)}^2}} \,dt}}\)</h3>
+    </div>
+    <h3 class="text-start mb-4 fs-6">However, we can simplify the following arc length equation regarding the vector function using the norm: 
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \sqrt {{{\left( {\frac{{dx}}{{dt}}} \right)}^2} + {{\left( {\frac{{dy}}{{dt}}} \right)}^2}}  = \left\| {\,\vec r'\left( t \right)} \right\|\)</h3>
+        <h3 class="text-start mb-4 fs-6">Let's give some examples:
         <br><br>Now we need to talk about line integrals containing piecewise smooth curves.
         <br><br>Here is an illustration describing these curves:
-        <br><br>Performing a line integral for this entire graph would not be the most effective. However, splitting up the line integrals into smaller ones for each section would make the process much more straightforward as follows:
-        <br><br>Let's see an example of this.
+        <br><br>Performing a line integral for this entire graph would not be the most effective. However, splitting up the line integrals into smaller ones for each section would make the process much more straightforward as follows:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \int\limits_{C}{{f\left( {x,y} \right)\,ds}} = \int\limits_{{{C_1}}}{{f\left( {x,y} \right)\,ds}} + \int\limits_{{{C_2}}}{{f\left( {x,y} \right)\,ds}} + \int\limits_{{{C_3}}}{{f\left( {x,y} \right)\,ds}} + \int\limits_{{{C_4}}}{{f\left( {x,y} \right)\,ds}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Let's see an example of this.
         <br><br>We can also determine the line integral of a curve given a line segment from two points. 
         <br><br>For piecewise smooth curves, we can split the curve into multiple line integrals as such:
         <br><br>Here is the example graph of a piecewise curve. 
         <br><br>One thing we have yet to talk about regarding line integrals is the orientation at which we move across the boundaries. For example, we will determine an orientation for the direction of how the curve is being traced out. We want the initial bound to be \(A\) and the last \(B\). This boundary will be our positive orientation. Suppose we switch the order of \(A\) and \(B\) to flip the direction on its head. As a result, the line integral will now contain a negative instead of a positive sign due to the change in orientation. 
-        <br><br>In other words, let's define this fact:
-        <br><br>So far, we have only covered line integrals in \(\mathbb{R}^2\), but we can also extend the idea into \(\mathbb{R}^3\).
-        <br><br>Everything pretty much stays the same, except that we define the line integral as follows:
-        <br><br>Given that the norm of the vector function is equal to:
-        <br><br>Let's do an example of line integrals in \(\mathbb{R}^3\):
+        <h3 class="text-start fw-bold mb-0 fs-6">Fact:</h3>
+        <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{f\left( {x,y} \right)\,ds}} = \int\limits_{{ - C}}{{f\left( {x,y} \right)\,ds}}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">So far, we have only covered line integrals in \(\mathbb{R}^2\), but we can also extend the idea into \(\mathbb{R}^3\).
+        <br><br>Let's suppose we have a three-dimensional curve \(C\) given by the parameterization:
+        <h3 class="text-center mb-4 fs-6">\(x = x\left( t \right),\,\hspace{0.25in}y = y\left( t \right)\hspace{0.25in}z = z\left( t \right)\hspace{0.25in}a \le t \le b\)</h3>
+        <h3 class="text-start mb-4 fs-6">Everything pretty much stays the same, except that we define another component as follows:</h3>
+        <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{f\left( {x,y,z} \right)\,ds}} = \int_{{\,a}}^{{\,b}}{{f\left( {x\left( t \right),y\left( t \right),z\left( t \right)} \right)\sqrt {{{\left( {\frac{{dx}}{{dt}}} \right)}^2} + {{\left( {\frac{{dy}}{{dt}}} \right)}^2} + {{\left( {\frac{{dz}}{{dt}}} \right)}^2}} \,dt}}\)</h3>
+    </div>
+    <h3 class="text-center mb-4 fs-6">Or</h3>
+    <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{f\left( {x,y,z} \right)\,ds}} = \int_{{\,a}}^{{\,b}}{{f\left( {x\left( t \right),y\left( t \right),z\left( t \right)} \right)\displaystyle \left\| {\,\vec r'\left( t \right)} \right\| \,dt}}\)</h3>
+    </div>
+    <h3 class="text-start mb-4 fs-6">Given the vector function:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\vec r\left( t \right) = \left\langle {x\left( t \right),y\left( t \right),z\left( t \right)} \right\rangle\)</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

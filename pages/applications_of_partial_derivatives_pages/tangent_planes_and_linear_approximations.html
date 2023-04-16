@@ -98,32 +98,31 @@
         <br><br>For visualization, imagine that we have the surface of a function in \(\mathbb{R}^3\). You can think of a plane tangent to that surface as only a point. 
         <br><br>Let us consider a point \(\left(x_0, y_0 \right)\) and denote \(C_1\) as the trace to \(f \left(x, y \right)\) for the plane \(y = y_0\) (with \(x\) varying and \(y\) fixed) and \(C_2\) as the trace to \(f \left(x, y \right)\) for the plane \(x = x_0\) (with \(y\) varying and \(x\) fixed). Then, the slope of the tangent line to \(C_1\) is \(f_x\left(x_0, y_0 \right)\), and the slope of the tangent line to \(C_2\) is \(f_y \left(x_0, y_0 \right)\).
         <br><br>We can define \(L_1\) as the tangent line to \(C_1\) and \(L_2\) as the tangent line to \(C_2\). The tangent plane will contain \(L_1\) and \(L_2\) while serving the same purpose as a tangent line in Calculus I. A tangent plane is a plane that touches the surface at the point and is "parallel" to the surface at that point. The tangent plane and the surface touch at \(\left(x_0, y_0 \right)\), and this point is on both the surface and the plane.
+        <br><br>\(\left( {{x_0},{y_0},{z_0}} \right) = \left( {{x_0},{y_0},f\left( {{x_0},{y_0}} \right)} \right)\)
         <br><br>To obtain the equation of the tangent plane, we must define the general equation of a plane:
+        <br><br>\(a\left( {x - {x_0}} \right) + b\left( {y - {y_0}} \right) + c\left( {z - {z_0}} \right) = 0\)
         <br><br>Given that \(\left(x_0,y_0,z_0 \right)\) is a point we have on the plane. We will further simplify this as follows:
+        <br><br>\(z - {z_0} =  - \frac{a}{c}\left( {x - {x_0}} \right) - \frac{b}{c}\left( {y - {y_0}} \right)\)
         <br><br>Also, I'm not too fond of fractions. So, as a result, we will set the fractions to CAPITAL CONSTANTS!
+        <br><br>\(A =  - \frac{a}{c}\hspace{0.25in}B =  - \frac{b}{c}\)
         <br><br>Subbing in the constants...
+        <br><br>\(z - {z_0} = A\left( {x - {x_0}} \right) + B\left( {y - {y_0}} \right)\)
         <br><br>And now, let's determine \(A\) and \(B\). Remember for traces, if we hold \(y\) fixed, then \(y_0 = y\), so the \(y\) term will cancel:
+        <br><br>\(z - {z_0} = A\left( {x - {x_0}} \right)\)
         <br><br>Since this equation of the line must be tangent to the surface at \(\left(x_0,y_0 \right)\), we will assume that \(\left(y=y_0 \right)\) and \(A\) is the slope of this line.
         <br><br>Which is the equation for \(L_1\), and the partial derivative of \(f \left(x,y \right)\) with respect to \(x\) is the slope. 
         <br><br>Therefore the equation is as such:
+        <br><br>\(A = {f_x}\left( {{x_0},{y_0}} \right)\)
         <br><br>And if we hold x fixed at \(x = x_0\), the equation of the tangent plane becomes,
+        <br><br>\(z - {z_0} = B\left( {y - {y_0}} \right)\)
         <br><br>Since this equation of the line must be tangent to the surface at \(\left(x_0,y_0 \right)\), we will assume that \(x = x_0\) and \(B\) is the slope of this line.
+        <br><br>\(B = {f_y}\left( {{x_0},{y_0}} \right)\)
         <br><br>We also know that \(z_0 = f \left(x_0,y_0 \right)\), so we can write the full tangent plane equation as: 
+        <br><br>\(z - {z_0} = {f_x}\left( {{x_0},{y_0}} \right)\left( {x - {x_0}} \right) + {f_y}\left( {{x_0},{y_0}} \right)\left( {y - {y_0}} \right)\)
         <br><br>This equation is also known as the linear approximation because we calculate the tangent plane near the point \(\left(x_0,y_0 \right)\).
+        <br><br>\(L\left( {x,y} \right) = f\left( {{x_0},{y_0}} \right) + {f_x}\left( {{x_0},{y_0}} \right)\left( {x - {x_0}} \right) + {f_y}\left( {{x_0},{y_0}} \right)\left( {y - {y_0}} \right)\)
         <br><br>If we are "near" the point \(\left(x_0, y_0 \right)\), we should have that...
-        <br><br>It is possible to obtain the equation from the previous section using a more general formula. To explain this, consider the equation \(z = f \left(x,y \right)\), where we aim to determine the tangent plane to the surface described by \(z = f \left(x, y \right)\) at the specific point \(\left(x_0, y_0, z_0 \right)\), where \(z_0 = f \left(x_0, y_0 \right)\). We must isolate all variables on one side of the equation to apply the general formula. We can achieve this by subtracting \(z\) from both sides of the equation.
-        <br><br>Using this definition, let's define a new function:
-        <br><br>Notice that \(z=f \left(x,y \right)\) is identical to the surface given by \(F \left(x,y,z \right) = 0\). So this equation is now in the correct form as the previous tangent plane equation. 
-        <br><br>As such, we need first to find the gradient vector for \(F\):
-        <br><br>Notice that:
-        <br><br>The equation of the tangent plane is then:
-        <br><br>Solving for \(z\), we get:
-        <br><br>The equation of the normal line at a point \(\left(x_0, y_0, z_0 \right)\) on the surface given by the equation \(f \left(x,y,z \right) = k\) is given by:
-        \(\vec{r}(t) = \left(x_0, y_0, z_0 \right) + t, \nabla f \left(x_0, y_0, z_0 \right)\)
-        where \(t\) is a scalar parameter.
-        <br><br>Recall that a point and a parallel vector determine a line to see why this is the case. We want a line perpendicular to the surface at the point \(\left(x_0, y_0, z_0 \right)\), which means that the direction vector of the line must be normal to the surface at that point. 
-        <br><br>We already know that \(\nabla f \left(x_0, y_0, z_0 \right)\) is normal to the surface, so that we can use it as the direction vector of the line. Furthermore, the point \(\left(x_0, y_0, z_0 \right)\) is also on the line so that we can use it as the line's starting point.
-        <br><br>Therefore, the equation of the normal line is given by the vector equation \(\vec{r}(t) = \left(x_0, y_0, z_0 \right) + t,\nabla f \left(x_0, y_0, z_0 \right)\), where \(t\) is a scalar parameter. This equation represents a line that passes through the point \(\left(x_0, y_0, z_0\right)\) and is perpendicular to the surface at that point.
+        <br><br>\(f\left( {x,y} \right) \approx L\left( {x,y} \right) = f\left( {{x_0},{y_0}} \right) + {f_x}\left( {{x_0},{y_0}} \right)\left( {x - {x_0}} \right) + {f_y}\left( {{x_0},{y_0}} \right)\left( {y - {y_0}} \right)\)
         </h3>
     </div>
 

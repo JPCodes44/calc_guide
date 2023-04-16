@@ -96,17 +96,40 @@
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">In this section, we will explore using derivatives in vector functions, which have multiple applications that ultimately rely on the first application.
         <br><br>Previously, we used the concept that a function's derivative represents the tangent line's slope. We arrive at the same result in vector functions except for one detail.
-        <br><br>When dealing with a vector function, \(r(t)\), we define \(r'(t)\) as the tangent vector, provided that it exists and is not equal to zero. The tangent line to \(r(t)\) at point \(P\) is the line that passes through \(P\) and is parallel to the tangent vector, \(r'(t)\). It's important to note that the requirement \(r'(t) != 0\) must have a tangent vector.
+        <br><br>When dealing with a vector function, \(r(t)\), we define \(r'(t)\) as the tangent vector, provided that it exists and is not equal to zero. The tangent line to \(r(t)\) at point \(P\) is the line that passes through \(P\) and is parallel to the tangent vector, \(r'(t)\). It's important to note that the requirement \(r'(t) \neq 0\) must have a tangent vector.
         <br><br>Let's suppose we had:
-        <br><br>The following vector has no magnitude, so it would be impossible to determine the direction of the tangent.
-        <br><br>However, if \(r(t) != 0\), the unit tangent vector to the curve is given by,
-        <br><br>Let's also talk about the unit normal and binormal vectors.
+        <h3 class="text-center mb-4 fs-6">\(\vec r'\left( t \right) = \vec 0\)</h3>
+        <h3 class="text-start mb-4 fs-6">The following vector has no magnitude, so it would be impossible to determine the direction of the tangent.
+        <br><br>However, if \(r(t) \neq 0\), the unit tangent vector to the curve is given by,
+        <h3 class="text-center mb-4 fs-6">\(\vec T\left( t \right) = \dfrac{{\vec r'\left( t \right)}}{{\left\| {\vec r'\left( t \right)} \right\|}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Let's give an example:
+        <div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 1</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Find the general formula for the unit tangent vector and tangent vector of the curve given by</h3>
+            <h3 class="sameline text-start mb-0 fs-6">\(\vec r\left( t \right) = {t^3}\,\vec i + 3\sin t\,\vec j + 2\cos t\,\vec k\)</h3>
+        <details>
+            <summary class="show">
+                Show Solution
+            </summary>
+            <h3 class="text-start mb-0 fs-6">To find the tangent vector, we take the derivative of the curve:
+            <br><br>\(\vec r'\left( t \right) = 3t^2\,\vec i + 3\cos t\,\vec j - 2\sin t\,\vec k\)
+            <br><br>For the unit tangent vector, we will need the norm of the tangent vector:
+            <br><br>\(\begin{align*}\left\| {\vec r'\left( t \right)} \right\| & = \sqrt {9{t^4} + 9{{\cos }^2}t + 4{{\sin }^2}t} \\ \\ &  = \sqrt {9{t^2} + 13} \end{align*} \)
+            <br><br>Which we can then plug into the unit tangent vector equation:
+            <br><br>\(\begin{align*}\vec T\left( t \right) & = \dfrac{1}{{\sqrt {9{t^2} + 13} }}\left( {3{t^2}\,\vec i + 3\cos \,t\,\vec j - 2\sin t\,\vec k} \right)\\ \\ &  = \frac{{2t}}{{\sqrt {9{t^2} + 13} }}\,\vec i + \frac{{2\cos t}}{{\sqrt {9{t^2} + 13} }}\vec j - \frac{{2\sin t}}{{\sqrt {9{t^2} + 13} }}\,\vec k\end{align*}\)</h3>
+        </details>
+        </div>
+        <h3 class="text-start mb-0 fs-6">Let's also talk about the unit normal and binormal vectors.
         <br><br>The Unit normal vector is given by:
-        <br><br>The unit normal is orthogonal to the unit tangent vector and the curve.
-        <br><br>Fact <br>Suppose that \(r(t)\) is a vector such that \(||r(t)|| = c\) for all \(t\). Then \(r'(t)\) is orthogonal to \(r(t)\).
-        <br><br>Proof?
-        <br><br>The definition of the unit normal vector shows that \(||T(t)|| = 1\) for all \(t\) since \(T(t)\) is normal to \(T(t)\). But since \(T(t)\) is tangent to the curve, \(T'(t)\) and its vector must be orthogonal. We divide by \(||T(t)||\) and obtain a unit normal vector.
-        <br><br>Since the binormal vector is defined as the result of the cross product between the unit tangent vector and the normal unit vector, we can conclude that the binormal vector is perpendicular to both the tangent vector and the normal vector.
+        <br><br><h3 class="text-center mb-0 fs-6">\(\vec N\left( t \right) = \dfrac{{\vec T'\left( t \right)}}{{\left\| {\vec T'\left( t \right)} \right\|}}\)
+        <br><br><h3 class="text-start mb-0 fs-6">The unit normal is orthogonal to the unit tangent vector and the curve.</h3>
+        <br><h3 class="text-start fw-bold mb-0 fs-6">Fact:</h3>
+        <div class="fact"><h3 class="text-start mb-0 fs-6">Suppose that \(r(t)\) is a vector such that \(||r(t)|| = c\) for all \(t\). Then \(r'(t)\) is orthogonal to \(r(t)\).
+        </div>
+        <h3 class="text-start fw-bold mb-0 fs-6">Proof:</h3>
+        <div class = "proof">
+        <h3 class="text-start mb-0 fs-6">The definition of the unit normal vector shows that \(||T(t)|| = 1\) for all \(t\) since \(T(t)\) is normal to \(T(t)\). But since \(T(t)\) is tangent to the curve, \(T'(t)\) and its vector must be orthogonal. We divide by \(||T(t)||\) and obtain a unit normal vector.
+        <br><br>Since the binormal vector is defined as the result of the cross product between the unit tangent vector and the normal unit vector, we can conclude that the binormal vector is perpendicular to both the tangent vector and the normal vector.</h3>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

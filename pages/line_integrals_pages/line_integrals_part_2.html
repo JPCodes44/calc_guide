@@ -96,14 +96,35 @@
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">The previous section dealt with line integrals relative to arc length. However, this section will focus on line integrals with respect to either x, y, or both. Similarly, we will begin with a two-dimensional curve C that has a specific parameterization:
         <br><br>Check which differential you have so you don't screw up, eh?
-        <br><br>Remember integrals are also additive as follows:
-        <br><br>Let's do an example:
+        <div class="fact">
+            <h3 class="text-start mb-4 fs-6">The <b>line integral of \(f\) with respect to \(x\)</b> is,</h3>
+            <h3 class="text-center mb-4 fs-6">\(\displaystyle \int\limits_{C}{{f\left( {x,y} \right)\,dx}} = \int_{{\,a}}^{{\,b}}{{f\left( {x\left( t \right),y\left( t \right)} \right)x'\left( t \right)\,dt}}\)</h3>
+            <h3 class="text-start mb-4 fs-6">The <b>line integral of \(f\) with respect to \(y\)</b> is,</h3>
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle\int\limits_{C}{{f\left( {x,y} \right)\,dy}} = \int_{{\,a}}^{{\,b}}{{f\left( {x\left( t \right),y\left( t \right)} \right)y'\left( t \right)\,dt}}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Remember integrals are also additive as follows:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \int\limits_{C}{{Pdx\, + Q\,dy}} = \int\limits_{C}{{P\left( {x,y} \right)dx}} + \int\limits_{C}{{Q\left( {x,y} \right)\,dy}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Let's do an example:
         <br><br>What if we flip the direction of integration? Do we get the same value as before?
         <br><br>In this case, we get the same value except with a negative value. This pattern will always happen with these kinds of line integrals. 
-        <br><br>Let's define the following fact:
-        <br><br>It is also possible to perform integrals over three-dimensional curves. This involves adding a third integral with respect to the variable \(z\), resulting in a total of three integrals:
-        <br><br>Similar to the two-dimensional case, these three integrals will frequently appear together. Therefore, we will use a shorthand notation for them in this context.
-        <br><br>Let's work with an example.
+        <br><br>Let's define the following fact:</h3>
+        <h3 class="text-start fw-bold mb-0 fs-6">Fact</h3>
+        <div class="fact">
+            <h3 class="text-start mb-4 fs-6">If \(C\) is any curve then,</h3>
+            <h3 class="text-center mb-4 fs-6">\(\displaystyle \int\limits_{{ - C}}{{f\left( {x,y} \right)\,dx}} =  - \int\limits_{C}{{f\left( {x,y} \right)\,dx}}\hspace{0.25in}\hspace{0.25in}{\rm{and}}\hspace{0.25in}\,\,\,\,\,\,\int\limits_{{ - C}}{{f\left( {x,y} \right)\,dy}} =  - \int\limits_{C}{{f\left( {x,y} \right)\,dy}}\)</h3>
+            <h3 class="text-start mb-4 fs-6">Combining the two integrals we get,</h3>
+            <h3 class="text-center mb-4 fs-6">\(\displaystyle \int\limits_{{ - C}}{{Pdx\, + Q\,dy}} =  - \int\limits_{C}{{Pdx\, + Q\,dy}}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">It is also possible to perform integrals over three-dimensional curves. This involves adding a third integral with respect to the variable \(z\), resulting in a total of three integrals:
+        <div class="fact">
+            <h3 class="text-center mb-4 fs-6">\(\begin{align*}\int\limits_{C}{{f\left( {x,y,z} \right)\,dx}} & = \int_{{\,a}}^{{\,b}}{{f\left( {x\left( t \right),y\left( t \right),z\left( t \right)} \right)x'\left( t \right)\,dt}}\\ \int\limits_{C}{{f\left( {x,y,z} \right)\,dy}} & = \int_{{\,a}}^{{\,b}}{{f\left( {x\left( t \right),y\left( t \right),z\left( t \right)} \right)y'\left( t \right)\,dt}}\\ \int\limits_{C}{{f\left( {x,y,z} \right)\,dz}} & = \int_{{\,a}}^{{\,b}}{{f\left( {x\left( t \right),y\left( t \right),z\left( t \right)} \right)z'\left( t \right)\,dt}}\end{align*}\)</h3>    
+            <h3 class="text-start mb-4 fs-6">Where the curve C is parameterized by,</h3>
+            <h3 class="text-center mb-4 fs-6">\(x = x\left( t \right)\hspace{0.25in}y = y\left( t \right)\hspace{0.25in}z = z\left( t \right)\hspace{0.25in}a \le t \le b\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Similar to the two-dimensional case, these three integrals will frequently appear together. Therefore, we will use a shorthand notation for them in this context.</h3>
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{Pdx\, + Q\,dy + R\,dz}} = \int\limits_{C}{{P\left( {x,y,z} \right)dx}} + \int\limits_{C}{{Q\left( {x,y,z} \right)\,dy}} + \int\limits_{C}{{R\left( {x,y,z} \right)dz}}\)</h3>
+        </div>
         </h3>
     </div>
 

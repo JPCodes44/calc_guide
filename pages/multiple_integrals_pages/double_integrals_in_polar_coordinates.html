@@ -94,16 +94,45 @@
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
         <h3 class="text-start fs-5">Chapter 4.3 : Double Integrals in Polar Coordinates</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">
-        <br><br>Reviewing the definition of definite integrals for single-variable functions is essential for discussing double integrals. Specifically, when dealing with integrals,    
-        <br><br>To describe this region in terms of \(x\) and \(y\), we must establish a set of inequalities for \(x\) and \(y\). These inequalities are:
-        <br><br>Setting up the double integral, we have:
-        <br><br>As you can see, the integral in cartesian coordinates is a little bit aids, so we will use polar coordinates to make the process easier:
-        <br><br>Given the following inequalities in polar:
-        <br><br>Note that we have replaced the \(dx\) and dy with \(d \theta\) and \(dr\). However, we cannot just replace them. Instead, we must use the jacobian or change of variables to obtain the proper conversion to polar:
-        <br><br>Recall from previous sections that converting from cartesian to polar and polar to cartesian uses the following formulas:
-        <br><br>To get some practice in, let's review the following examples:
-        <br><br>In some cases, we are already given a disk integral in terms of x and y, and we need to convert the following boundaries to polar.
+        <h3 class="text-start mb-4 fs-6">Reviewing the definition of definite integrals for single-variable functions is essential for discussing double integrals. For instance, let's suppose we wanted to do the following integral,
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle\iint\limits_{D}{{f\left( {x,y} \right)\,dA}},\,\,\,\,\,D{\mbox{ is the disk of radius 2}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">To describe this region in terms of \(x\) and \(y\), we must establish a set of inequalities for \(x\) and \(y\). These inequalities are:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\begin{array}{c} - 2 \le x \le 2\\ - \sqrt {4 - {x^2}}  \le y \le \sqrt {4 - {x^2}} \end{array}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Setting up the double integral, we have:
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle\iint\limits_{D}{{f\left( {x,y} \right)\,dA}} = \int_{{\, - 2}}^{{\,2}}{{\int_{{ - \sqrt {4 - {x^2}} }}^{{\,\sqrt {4 - {x^2}} }}{{f\left( {x,y} \right)\,dy}}\,dx}}\)</h3>    
+        <h3 class="text-start mb-4 fs-6">As you can see, the integral in cartesian coordinates is a little bit aids, so we will use polar coordinates to make the process easier:
+        <h3 class="text-center mb-4 fs-6">\(\begin{array}{c}0 \le \theta  \le 2\pi \\ 0 \le r \le 2\end{array}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Note that we have replaced the \(dx\) and dy with \(d \theta\) and \(dr\). However, we cannot just replace them. Instead, we must use the jacobian or change of variables to obtain the proper conversion to polar:
+        <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\(dA = r\,dr\,d\theta\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Recall from previous sections that converting from cartesian to polar and polar to cartesian uses the following formulas:
+        <h3 class="text-center mb-4 fs-6">\(x = r\cos \theta \hspace{0.5in}y = r\sin \theta \hspace{0.5in}{r^2} = {x^2} + {y^2}\)</h3>
+        <h3 class="text-start mb-4 fs-6">To get some practice in, let's review the following examples:
+        <div class="proof">
+            <h3 class="sameline text-start fst-italic mb-0 fw-bold fs-6">Example 1</h3>
+            <h3 class="sameline text-start mb-4 fs-6">Evaluate the following integrals by converting them into polar coordinates.</h3>
+            <ol>
+                <li><h3 class="text-start mb-4 fs-6">\(\displaystyle \iint\limits_{D}{{2x\,y\,dA}}\), \(D\) is the portion of the region between the circles of radius 2 and radius 5 centered at the origin that lies in the first quadrant.</h3></li>
+                <li><h3 class="text-start mb-4 fs-6">\(\displaystyle \iint\limits_{D}{{{{\bf{e}}^{{x^2} + {y^2}}}\,dA}}\), \(D\) is the unit disk centered at the origin.</h3></li>
+            </ol>
+            <hr>
+            <br>
+            <h3 class="sameline text-start mb-4 fs-6">(a) \(\displaystyle \iint\limits_{D}{{2x\,y\,dA}}\), \(D\) is the portion of the region between the circles of radius 2 and radius 5 centered at the origin that lies in the first quadrant.</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+            </details>
+            <br>
+            <h3 class="sameline text-start mb-0 fs-6">(b) \(\displaystyle \iint\limits_{D}{{{{\bf{e}}^{{x^2} + {y^2}}}\,dA}}\), \(D\) is the unit disk centered at the origin.</h3>
+                <details>
+                    <summary class="show">
+                        Show Solution
+                    </summary>
+                </details>
+        </div>
+        <h3 class="text-start mb-4 fs-6">In some cases, we are already given a disk integral in terms of x and y, and we need to convert the following boundaries to polar.
         <br><br>For example:
         </h3>
     </div>

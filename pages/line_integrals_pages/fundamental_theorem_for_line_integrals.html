@@ -95,18 +95,53 @@
         <h3 class="text-start fs-5">Chapter 5.5 : Fundamental Theorem of Line Integrals</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">Recall back to Calculus 1; we discovered the fundamental theorem of calculus that gave us a more straightforward way to integrate definite integrals:
-        <br><br>For line integrals over specific vector fields, there is also a Fundamental Theorem of Line Integrals:
-        <br><br>Suppose that C is a smooth curve given by r(t) between \(a \leq t \leq b\), and the gradient of f is continuous on C. Then,
-        <br><br>Given that \(r \left(a \right)\) represents the initial point on \(C\) while \(r \left(b \right)\) represents the final point on \(C\). 
+            <h3 class="text-center mb-4 fs-6">\(\displaystyle \int_{{\,a}}^{{\,b}}{{F'\left( x \right)dx}} = F\left( b \right) - F\left( a \right)\)</h3>
+            <h3 class="text-start mb-4 fs-6">For line integrals over specific vector fields, there is also a Fundamental Theorem of Line Integrals:</h3>
+        <div class="fact">
+            <h3 class="text-start mb-4 fs-6">Suppose that C is a smooth curve given by r(t) between \(a \leq t \leq b\), and the gradient of f is continuous on C. Then,</h3>
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{\nabla f\centerdot \,d\,\vec r}} = f\left( {\vec r\left( b \right)} \right) - f\left( {\vec r\left( a \right)} \right)\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Given that \(r \left(a \right)\) represents the initial point on \(C\) while \(r \left(b \right)\) represents the final point on \(C\). 
         <br><br>Proof:<div class="proof">Note that we can work in any dimension for this proof but will work in \(\mathbb{R}^3\) for now.
         <br><br>Let's start with evaluating the line integral:
-        <br><br>We can then use Chain Rule to simplify the integrand:
-        <br><br>To finish the proof, we know we can turn this type of integral into the definition for the Fundamental Theorem of Calculus:</div>
-        Let's take a look at an example using this theorem:
-        <br><br>Note that we do not need to know the path we are integrating; we only need to know the initial and final points. Therefore changing the course will NOT change the value of the line integral.
-        <br><br>As we work through line integrals over vector fields, we will need to define some new definitions and facts:
-        <br><br>Definitions:
-        <br><br>Facts:
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \begin{align*}\int\limits_{C}{{\nabla f\centerdot d\,\vec r}} & = \int_{{\,a}}^{{\,b}}{{\nabla f\left( {\vec r\left( t \right)} \right)\centerdot \vec r'\left( t \right)\,dt}}\\ &  = \int_{{\,a}}^{{\,b}}{{\left( {\frac{{\partial f}}{{\partial x}}\frac{{dx}}{{dt}} + \frac{{\partial f}}{{\partial y}}\frac{{dy}}{{dt}} + \frac{{\partial f}}{{\partial z}}\frac{{dz}}{{dt}}} \right)\,dt}}\end{align*}\)</h3>
+        <h3 class="text-start mb-4 fs-6">We can then use Chain Rule to simplify the integrand:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \begin{align*}\int\limits_{C}{{\nabla f\centerdot d\,\vec r}} & = \int_{{\,a}}^{{\,b}}{{\left( {\frac{{\partial f}}{{\partial x}}\frac{{dx}}{{dt}} + \frac{{\partial f}}{{\partial y}}\frac{{dy}}{{dt}} + \frac{{\partial f}}{{\partial z}}\frac{{dz}}{{dt}}} \right)\,dt}}\\ &  = \int_{{\,a}}^{{\,b}}{{\frac{d}{{dt}}\left[ {f\left( {\vec r\left( t \right)} \right)} \right]\,dt}}\end{align*}\)</h3>
+        <h3 class="text-start mb-4 fs-6">To finish the proof, we know we can turn this type of integral into the definition for the Fundamental Theorem of Calculus:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \int\limits_{C}{{\nabla f\centerdot d\,\vec r}} = f\left( {\vec r\left( b \right)} \right) - f\left( {\vec r\left( a \right)} \right)\)</h3>
+    </div>
+    <h3 class="text-start mb-4 fs-6">Note that we do not need to know the path we are integrating; we only need to know the initial and final points. Therefore changing the course will NOT change the value of the line integral.
+        <br><br>As we work through line integrals over vector fields, we will need to define some new definitions and facts,
+        <h3 class="text-start mb-0 fw-bold fs-6">Definitions:</h3>
+        <div class="fact">
+            <h3 class="text-start mb-4 fs-6">First suppose that \(\vec{F}\) is a continuous vector field in some region D.
+            <br><br>
+            <ol>
+                <li>A vector field \(\vec{F}\) is considered conservative if there exists a function \(f\) that satisfies the equation \(\vec{F} = \nabla f\), where \(\nabla\) is the gradient operator. The function f is referred to as a potential function for the vector field. This definition was introduced in the first section of the current chapter.</li>
+                <li>\(\displaystyle \int_C \vec{F} \centerdot \vec{dr}\) is <b>independent-of-path</b> if \(\displaystyle \int_{C_1} \vec{F} \centerdot \vec{dr} = \int_{C_2} \vec{F} \centerdot \vec{dr}\) for any two paths \(C_1\) and \(C_2\) in \(D\) with the same initial and final points.</li>
+                <li>A path \(C\) is called <b>closed</b> if the initial starting points are the same as the final ones.</li>
+                <li>A path \(C\) is <b>simple</b> if the path does not cross itself. For example, a figure 8 is not simple because the curve crosses itself./li>
+                <li>A region \(D\) is <b>open</b> if it doesn't contain any of it's boundary points.</li>
+                <li>A region \(D\) is <b>connected</b> if we can connect any two points in the region \(D\) and have the path lie completely in \(D\).</li>
+                <li>A region \(D\) is <b>simply-connected</b> if it is connected and contains no holes.</li>
+            </ol>
+        </h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">With these definitions, we can obtain the following facts,</h3>
+        <h3 class="text-start mb-0 fw-bold fs-6">Facts:</h3>
+        <div class="fact">
+            <ol>
+                <li>\(\displaystyle \int\limits_{C}{{\nabla f\centerdot \,d\,\vec r}}\) is independent of path
+                    <br>
+                </li>
+                <li>\(\displaystyle \int_C \vec{F} \centerdot \vec{dr}\) is <b>independent-of-path</b> if \(\displaystyle \int_{C_1} \vec{F} \centerdot \vec{dr} = \int C_2 \vec{F} \centerdot \vec{dr}\) for any two paths \(C_1\) and \(C_2\) in \(D\) with the same initial and final points.</li>
+                <li>A path \(C\) is called <b>closed</b> if the initial starting points are the same as the final ones.</li>
+                <li>A path \(C\) is <b>simple</b> if the path does not cross itself. For example, a figure 8 is not simple because the curve crosses itself./li>
+                <li>A region \(D\) is <b>open</b> if it doesn't contain any of it's boundary points.</li>
+                <li>A region \(D\) is <b>connected</b> if we can connect any two points in the region \(D\) and have the path lie completely in \(D\).</li>
+                <li>A region \(D\) is <b>simply-connected</b> if it is connected and contains no holes.</li>
+            </ol>
+        </div>   
     </h3>
     </div>
 

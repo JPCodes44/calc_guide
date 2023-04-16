@@ -95,9 +95,20 @@
         <h3 class="text-start fs-5">Chapter 2.6 : Interpretations of Partial Derivatives</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">Let's discuss how to find the equations of the tangent line. In three-dimensional space, the equation of a line is represented by a vector equation. To obtain the equation, we require a point on the line and a vector that is parallel to the line.</h3>
-        <h3 class="text-start mb-4 fs-6">Finding the point is simple as we know the x-y coordinates of the point, which we can substitute into the equation to obtain the point:</h3>
-        <h3 class="text-start mb-4 fs-6">The parallel/tangent vector can be obtained by writing the equation of the surface as a vector function:</h3>
-        <h3 class="text-start mb-4 fs-6">If we are given a vector function, we can differentiate it to give us the tangent vector. In other words, we can differentiate with respect to the dependent variable('s) using traces. So, for example, If we differentiate with respect to x, we will get the tangent vector for the plane y=b.</h3>
+        <h3 class="text-start mb-4 fs-6">Finding the point is simple as we know the x-y coordinates of the point, which we can substitute into the equation to obtain the point:
+        <br><br>\(\left( {a,b,f\left( {a,b} \right)} \right)\)</h3>
+        <h3 class="text-start mb-4 fs-6">The parallel/tangent vector can be obtained by writing the equation of the surface as a vector function:
+        <br><br>\(\vec r\left( {x,y} \right) = \left\langle {x,y,z} \right\rangle  = \left\langle {x,y,f\left( {x,y} \right)} \right\rangle\)</h3>
+        <h3 class="text-start mb-4 fs-6">If we are given a vector function, we can differentiate it to give us the tangent vector. In other words, we can differentiate with respect to the dependent variable('s) using traces. So, for example, If we differentiate with respect to \(x\), we will get the tangent vector for the plane \(y=b\).
+            <br><br>Here is a tangent vector for traces with a fixed \(y\):
+            <br><br>\({\vec r_x}\left( {x,y} \right) = \left\langle {1,0,{f_x}\left( {x,y} \right)} \right\rangle\)
+            <br><br>The same goes for a tangent vector with a fixed \(x\):
+            <br><br>\({\vec r_y}\left( {x,y} \right) = \left\langle {0,1,{f_y}\left( {x,y} \right)} \right\rangle\)
+            <br><br>The equation for a tangent line with traces for a fixed \(y\) is:
+            <br><br>\(\vec r\left( t \right) = \left\langle {a,b,f\left( {a,b} \right)} \right\rangle  + t\left\langle {1,0,{f_x}\left( {a,b} \right)} \right\rangle\)
+            <br><br>And a tangent line to traces with a fixed \(x\) is:
+            <br><br>\(\vec r\left( t \right) = \left\langle {a,b,f\left( {a,b} \right)} \right\rangle  + t\left\langle {0,1,{f_y}\left( {a,b} \right)} \right\rangle\)
+        </h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

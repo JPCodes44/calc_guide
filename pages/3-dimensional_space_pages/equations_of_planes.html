@@ -106,15 +106,50 @@
         If given an equation of planes, we can easily find the normal vector by looking at the coefficients \(a\), \(b\), and \(c\).
         <br><br>Let's work some examples.
         <br><div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 1</h3>
-        <h3 class="sameline text-start mb-0 fs-6">Determine the equation of the plane containing the points \(P = \left(2,-1,3 \right)\), \(Q = \left(-1,4,1 \right)\) and \(R = \left(0,-2,5 \right)\).</h3>
+        <h3 class="sameline text-start mb-0 fs-6">Determine the equation of the plane containing the points \(P = \left(2,-1,3 \right)\), \(Q = \left(-1,4,1 \right)\) and \(R = \left(0,-2,5 \right)\) is .</h3>
         <details>
-            <summary>
+            <summary class="show">
                 Show Solution
             </summary>
-            <h3 class="text-start mb-0 fs-6"></h3>
+            <hr>
+            <br>
+            <h3 class="text-start mb-0 fs-6">To write down the equation of a plane, we need all of the required points we have. In addition, we also need to find a normal vector using the cross-product.
+            <br><br>Let's form the following two vectors from the given points:</h3>
+            <br>
+            <h3 class="text-center mb-0 fs-6">\(\overrightarrow {PQ} = \left\langle {2,3,4} \right\rangle \hspace{0.25in}\hspace{0.25in}\overrightarrow {PR} = \left\langle { - 1,1,2} \right\rangle\)</h3>
+            <br>
+            <h3 class="text-start mb-0 fs-6">Notice that these points lie entirely in the plane since we used points from the plane to form those two vectors.
+            <br><br>We also know that the cross-product of two vectors will be orthogonal to both of the two vectors. Therefore, we can use the cross-product of the two vectors to find our normal vector:</h3>
+            <br>
+            <h3 class="text-center mb-0 fs-6">\(\vec n = \overrightarrow {PQ}  \times \overrightarrow {PR}  = \left| {\begin{array}{*{20}{c}}{\vec i}&{\vec j}&{\vec k}\\2&3&4\\{ - 1}&1&2\end{array}} \right|\,\,\,\,\begin{array}{*{20}{c}}{\vec i}&{\vec j}\\2&3\\{ - 1}&1\end{array} = 2\vec i - 8\vec j + 5\vec k\)</h3>
+            <br>
+            <h3 class="text-start mb-0 fs-6">Now we can form the following equation of the plane:</h3>
+            <br>
+            <h3 class="text-center mb-0 fs-6">\(\begin{align*}2\left( {x - 1} \right) - 8\left( {y + 2} \right) + 5\left( {z - 0} \right) & = 0\\ 2x - 8y + 5z & = 18\end{align*}\)</h3>
+            <br>
+            <h3 class="text-start mb-0 fs-6">We could have also used Q or R for the plane equation.</h3>
         </details>
         </div>
-        </div>
+        <div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 2</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Determine if the plane given by \(- x + 2z = 10\) is orthogonal, parallel, or neither to the line \(\vec r = \left\langle {5,2 - t,10 + 4t} \right\rangle\)</h3>
+        <details>
+            <summary class="show">
+                Show Solution
+            </summary>
+            <hr>
+            <br>
+            <h3 class="text-start mb-0 fs-6">Remember that we can pick off a vector normal to the plane by focusing on the coefficients? This will give us \(\vec n = \left\langle { - 1,0,2} \right\rangle\). we can also obtain a parallel vector, such as \(v = \left\langle {0, - 1,4} \right\rangle\). If n and v are parallel, then v is orthogonal to the plane and parallel to the line. Therefore, the plane will be orthogonal if the two vectors are parallel to the line.
+            <br><br>To check, we will see if the cross-product is 0:</h3>
+            <br>
+            <h3 class="text-center mb-0 fs-6">\(\vec n \times \vec v = \left| {\begin{array}{*{20}{c}}{\vec i}&{\vec j}&{\vec k}\\{ - 1}&0&2\\0&{ - 1}&4\end{array}} \right|\,\,\,\,\begin{array}{*{20}{c}}{\vec i}&{\vec j}\\{ - 1}&0\\0&{ - 1}\end{array} = 2\vec i + 4\vec j + \vec k \ne \vec 0\)</h3>
+            <br>
+            <h3 class="text-start mb-0 fs-6">As we can see, the vectors are not parallel, which means the plane and the line are not orthogonal.
+            <br><br>Now we need to check if the plane and the line are parallel; we will check by using the dot product for n and v as such:
+            <br><br>\(\vec n\centerdot \vec v = 0 + 0 + 8 = 8 \ne 0\)
+            </h3>
+        </details>
+    </div>  
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

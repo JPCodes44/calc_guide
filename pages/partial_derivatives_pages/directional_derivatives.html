@@ -97,44 +97,67 @@
         <h3 class="text-start mb-4 fs-6">Defining this change is complicated because there are many ways to allow both \(x\) and \(y\) to change, such as varying at different rates or directions. To address this, we must first establish some preliminary concepts. Specifically, we must define how \(x\) and/or \(y\) change. For example, suppose we wish to find the rate of change of \(f\) at a specific point \((x_0, y_0)\), where both \(x\) and \(y\) are increasing, but \(x\) is growing twice as fast as \(y\). To define this change, we can consider a particle at \((x_0, y_0)\) moving toward increasing x and y, where the \(x\)-coordinate increases twice as fast as the \(y\)-coordinate. Then, using vectors, we can describe the direction the particle moves.
 <br><br>Up to this point, we have examined the partial derivatives of \(f\) with respect to \(x\) and \(y\), representing the rate of change of \(f\) as we vary \(x\) (holding \(y\) constant) and \(y\) (holding \(x\) constant), respectively. However, we must now address how to find the rate of change of \(f\) if we allow both \(x\) and \(y\) to change simultaneously.
 <br><br>Let's suppose we have the vector:
+<br><br>\(\vec v = \left\langle {2,1} \right\rangle\)
 <br><br>This vector tells us how much \(x\) and \(y\) change at a specific point. So in this example, \(x\) is increasing twice as fast as \(y\) is. There is one problem, though. Other vectors point in the same direction as the example:
+<br><br>\(\vec v = \left\langle {\dfrac{1}{5},\dfrac{1}{{10}}} \right\rangle \,\hspace{0.25in}\,\,\,\vec v = \left\langle {6,3} \right\rangle \hspace{0.25in}\vec v = \left\langle {\dfrac{2}{{\sqrt 5 }},\dfrac{1}{{\sqrt 5 }}} \right\rangle\)
 <br><br>To find the exact rate of change in a given direction, we need to use the definition of the directional derivative:
-<br><br>Unfortunately, this limit is challenging to compute, so we need a better alternative to derive a more straightforward formula.
+<br><br>The rate of change of f(x,y) in the direction of the unit vector u = <a,b> is called the directional derivative denoted by \({D_{\vec u}}f\left( {x,y} \right)\). The definition of the directional derivative is,</a>
+<br><br><h3 class="text-start mb-0 fw-bold fs-6">Definition:</h3>
+<div class="fact">
+    <h3 class="text-start mb-2 fs-6">The rate of change of \(f \left(x,y \right)\) in the direction of the unit vector \(u = \left\langle a,b \right\rangle\) is called the directional derivative denoted by \({D_{\vec u}}f\left( {x,y} \right)\). The definition of the directional derivative is,
+    <h3 class="text-center mb-2 fs-6">\({D_{\vec u}}f\left( {x,y} \right) = \mathop {\lim }\limits_{h \to 0} \dfrac{{f\left( {x + ah,y + bh} \right) - f\left( {x,y} \right)}}{h}\)
+</div>
+<h3 class="text-start mb-4 fs-6">Unfortunately, this limit is challenging to compute, so we need a better alternative to derive a more straightforward formula.
 <br><br>Suppose we define a new function with respect to a single variable.
+<br><br>\(g\left( z \right) = f\left( {{x_0} + az,{y_0} + bz} \right)\)
 <br><br>Given that \(x_0\), \(y_0\), \(a\), and \(b\) are fixed numbers.
+<br><br>If we apply the definition of the derivative for functions that have only one variable, then we can conclude the following:
+<br><br>\(g'\left( z \right) = \mathop {\lim }\limits_{h \to 0} \dfrac{{g\left( {z + h} \right) - g\left( z \right)}}{h}\)
 <br><br>And since \(z\) is not representing a fixed number, we can set it to \(0\) and plug that into the definition of the derivative:
+<br><br>\(g'\left( 0 \right) = \mathop {\lim }\limits_{h \to 0} \dfrac{{g\left( h \right) - g\left( 0 \right)}}{h}\)
 <br><br>Substituting \(g(z)\) we get:
-<br><br>Using the chain rule, we get the following:
+<br><br>\(g'\left( 0 \right) = \mathop {\lim }\limits_{h \to 0} \dfrac{{g\left( h \right) - g\left( 0 \right)}}{h} = \mathop {\lim }\limits_{h \to 0} \dfrac{{f\left( {{x_0} + ah,{y_0} + bh} \right) - f\left( {{x_0},{y_0}} \right)}}{h} = {D_{\vec u}}f\left( {{x_0},{y_0}} \right)\)
 <br><br>Obtaining the following relationship:
-<br><br>and since at \(z = 0\), \(x = x_0\), and \(y = y_0\), we can plug in \(z = 0\) into the relationship above:
+<br><br>\(\begin{equation}g'\left( 0 \right) = {D_{\vec u}}f\left( {{x_0},{y_0}} \right) \label{eq:eq1} \end{equation}\)
+<br><br>And since at \(z = 0\), \(x = x_0\), and \(y = y_0\), we can plug in \(z = 0\) into the relationship above:
+<br><br>\(\begin{equation}g'\left( 0 \right) = {f_x}\left( {{x_0},{y_0}} \right)a + {f_y}\left( {{x_0},{y_0}} \right)b \label{eq:eq3}\end{equation}\)
 <br><br>Equating the relationship to the directional derivative, we get:
-<br><br>The same can be said for more than two variables, where we get the following definition:
-<br><br>Let's work on a couple of examples.
+<br><br>\({D_{\vec u}}f\left( {{x_0},{y_0}} \right) = g'\left( 0 \right) = {f_x}\left( {{x_0},{y_0}} \right)a + {f_y}\left( {{x_0},{y_0}} \right)\)
+<br><br>The same can be said for more than two variables, where we get the following definition:</h3>
+<div class="fact">
+    <h3 class="text-center mb-4 fs-6">\({D_{\vec u}}f\left( {x,y,z} \right) = {f_x}\left( {x,y,z} \right)a + {f_y}\left( {x,y,z} \right)b + {f_z}\left( {x,y,z} \right)\)</h3>
+</div>
+<h3 class="text-start mb-4 fs-6">Let's work on a couple of examples.
 <br><br>When we thought we were done, there was also an even simpler version of the directional derivative, which we will derive now.
 <br><br>First, we will rewrite the derivative and constants using the dot product:
+<br><br>\(\begin{align*}{D_{\vec u}}f\left( {x,y,z} \right) & = {f_x}\left( {x,y,z} \right)a + {f_y}\left( {x,y,z} \right)b + {f_z}\left( {x,y,z} \right)c\\ &  = \left\langle {{f_x},{f_y},{f_z}} \right\rangle \centerdot \left\langle {a,b,c} \right\rangle \end{align*}\)
 <br><br>Observe that the second vector is just the unit vector that indicates the change direction. When working with functions of two variables, the third component would be absent, but the formula remains unchanged otherwise.
 <br><br>To simplify notation, we assign a name to the first vector in the dot product - the gradient of \(f\) which will frequently appear in this and other courses.
+<br><br>\(\nabla f = {f_x}\,\vec i + {f_y}\vec j + {f_z}\,\vec k\hspace{0.5in}{\mbox{or}}\hspace{0.5in}\nabla f = {f_x}\,\vec i + {f_y}\vec j\)
 <br><br>Here are the most common forms of the gradient, vector form and basis vector form:
+<br><br>\(\nabla f = {f_x}\,\vec i + {f_y}\vec j + {f_z}\,\vec k\hspace{0.5in}{\mbox{or}}\hspace{0.5in}\nabla f = {f_x}\,\vec i + {f_y}\vec j\)
 <br><br>With the definition of the gradient, we can obtain the new relationship with the directional derivative:
+<br><br>\({D_{\vec u}}f = \nabla f\centerdot \vec u\)
 <br><br>We will adopt a formula that can be applied to any number of variables and omit the variable in our presentation. Additionally, we may use the notation below at times.
+<br><br>\({D_{\vec u}}f\left( {\vec x} \right) = \nabla f\centerdot \vec u\)
 <br><br>We will utilize the notation \(\rightarrow\) \(x = \left\langle{x, y, z}\right\rangle\) or \(\rightarrow\) \(x = \left\langle{x, y}\right\rangle\) as required. This notation is convenient when we wish to identify the variables in some manner but don't want to limit ourselves to a specific number of variables. Therefore, \(\rightarrow\) \(x\) will denote as many variables as required in the formula. In addition, we frequently use this notation when vectors or vector notation are already used in the problem/formula. Finally, we will apply this directional derivative formula through a few examples.
-<br><br>The norm of the gradient also tells us the maximum rate of change of the function \(f(x)\).
-<br><br>Let's prove this:
-<br><div class="proof">The maximum value of \(cos(θ)\) is \(1\), which occurs when \(\theta =0 \). As a result, the maximum value of \(\vec{D_u} f(\vec{x})\) is \(\nabla f\left(\vec{x}\right)\). The maximum value arises when the angle between the gradient and \(\vec{u}\) is zero, indicating that \(\vec{u}\) points in the same direction as the gradient, \(\nabla f\left( {{x_0},{y_0}} \right)\).</div>
-<br>This section has a second fact regarding the gradient vector that will be helpful in future areas.
-<br><br>Fact:
-<br><div class="fact">The gradient is normal to the level curve \(f \left(x,y \right) = k\) at the starting point \(\left(x_0,y_0\right)\). The same applies to more than three variables.</div>
-<br>Proof:
-<br><div class="proof">Let's prove the surface \(S\) in \(\mathbb{R}^3\) containing \(f \left(x,y,z\right) = k\) and \(P = \left(x_0,y_0,z_0\right)\). Note that \(P\) is a point on the surface of \(S\).
+<br><br>The norm of the gradient also tells us the maximum rate of change of the function \(f(x)\).</h3>
+<h3 class="text-start mb-0 fs-6">Let's prove this:</h3>
+<div class="proof">The maximum value of \(cos(θ)\) is \(1\), which occurs when \(\theta =0 \). As a result, the maximum value of \(\vec{D_u} f(\vec{x})\) is \(\nabla f\left(\vec{x}\right)\). The maximum value arises when the angle between the gradient and \(\vec{u}\) is zero, indicating that \(\vec{u}\) points in the same direction as the gradient, \(\nabla f\left( {{x_0},{y_0}} \right)\).</div>
+<h3 class="text-start mb-4 fs-6">This section has a second fact regarding the gradient vector that will be helpful in future areas.
+<br><h3 class="text-start mb-0 fw-bold fs-6">Fact:</h3>
+<div class="fact">The gradient is normal to the level curve \(f \left(x,y \right) = k\) at the starting point \(\left(x_0,y_0\right)\). The same applies to more than three variables.</div>
+<h3 class="text-start mb-0 fw-bold fs-6">Proof:</h3>
+<div class="proof">Let's prove the surface \(S\) in \(\mathbb{R}^3\) containing \(f \left(x,y,z\right) = k\) and \(P = \left(x_0,y_0,z_0\right)\). Note that \(P\) is a point on the surface of \(S\).
 <br><br>Let \(C\) be a curve on \(S\) that passes through point \(P\). Let vector equation \(\vec{r} \left(t \right) = \left\langle{x\left(t\right), y\left(t\right), z\left(t\right)}\right\rangle\) represent \(C\), and let \(t_0\) be the value of \(t\) that gives \(P\) \(\left(i.e., \vec{r}\left(t_0\right) = \left\langle{x_0, y_0, z_0}\right\rangle \right)\). 
 <br><br>Since \(r \left(t \right)= \left \langle{x\left(t \right),y\left(t \right),z\left(t \right)}\right\rangle\) is the vector equation for \(C\), and we know that \(C\) lies on \(S\), let's sub in \(r\left(t \right)\) into the function for \(S\):
 <br><br>Using the chain rule, we get the following:
 <br><br>Notice that \(\nabla f = \left\langle{f_x, f_y, f_z}\right\rangle\) and \(\vec r'\left( t \right) = \left\langle {x'\left( t \right),y'\left( t \right),z'\left( t \right)} \right\rangle\), so this becomes:
-<br><br> \(\nabla f\left( {{x_0},{y_0},{z_0}} \right)\,\centerdot \,\vec r'\left( {{t_0}} \right) = 0\)
+<br><br>\(\nabla f\left( {{x_0},{y_0},{z_0}} \right)\,\centerdot \,\vec r'\left( {{t_0}} \right) = 0\)
 <br><br>At \(t = t_0\), this is:
-<br><br>Since \(C\) is on \(S\), all points on \(C\) must satisfy the equation for \(S\). In other words, if we substitute \(x\left(t \right)\), \(y\left(t \right)\), and \(z\left(t \right)\) into the equation for \(S\), the equation will be satisfied for all values of \(t\) on \(C\)
+<br><br>Since \(C\) is on \(S\), all points on \(C\) must satisfy the equation for \(S\). In other words, if we substitute \(x\left(t \right)\), \(y\left(t \right)\), and \(z\left(t \right)\) into the equation for \(S\), the equation will be satisfied for all values of \(t\) on \(C\)</h3>
+<h3 class="text-start mb-4 fs-6">We frequently require vectors perpendicular to a curve or surface in upcoming sections. By utilizing this knowledge, we can determine that calculating a gradient vector will provide us with the needed orthogonal vector. The first instance of this application is introduced in the following chapter.</h3>
 </div>
-<br>We frequently require vectors perpendicular to a curve or surface in upcoming sections. By utilizing this knowledge, we can determine that calculating a gradient vector will provide us with the needed orthogonal vector. The first instance of this application is introduced in the following chapter.
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

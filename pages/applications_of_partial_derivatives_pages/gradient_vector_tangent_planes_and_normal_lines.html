@@ -95,14 +95,32 @@
         <h3 class="text-start fs-5">Chapter 3.2: Gradient Vector, Tangent Planes and Normal Lines</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">In this section, we will explore the concept of tangent planes by examining them in the context of the gradient vector. We will also investigate the normal line to a surface. First, let us recall the equation of a plane that includes the point \(\left(x_0, y_0, z_0 \right)\) with a normal vector represented by \(\vec{n} = \left\langle{a, b, c}\right\rangle\). This equation is given by...
-        <br><br>Now recall the following fact about directional derivatives:
-        <br><br>Fact:<div class="fact">
-        The gradient is normal to the level curve \(f \left(x,y \right) = k\) at the starting point \(\left(x_0,y_0 \right)\). The same applies to more than three variables. 
+        <br><br>\(a\left( {x - {x_0}} \right) + b\left( {y - {y_0}} \right) + c\left( {z - {z_0}} \right) = 0\)
+        <br><br>Now recall the following fact about directional derivatives,
+        <h3 class="text-start mb-0 fw-bold fs-6">Fact:<div class="fact">
+        <h3 class="text-start mb-0 fs-6">The gradient is normal to the level curve \(f \left(x,y \right) = k\) at the starting point \(\left(x_0,y_0 \right)\). The same applies to more than three variables. 
         </div>
-        <br>Let's apply this fact to 3 variables.
+        <h3 class="text-start mb-0 fs-6">Let's apply this fact to 3 variables.
         <br><br>Suppose we have the gradient:
+        <br><br>\(\nabla f = \left\langle {{f_x},{f_y},{f_z}} \right\rangle\)
         <br><br>Given that the tangent plane surface is \(f \left(x,y,z \right) = k\) at \(\left(x_0,y_0,z_0 \right)\) where the equation is:
+        <br><br>\({f_x}\left( {{x_0},{y_0},{z_0}} \right)\left( {x - {x_0}} \right) + {f_y}\left( {{x_0},{y_0},{z_0}} \right)\left( {y - {y_0}} \right) + {f_z}\left( {{x_0},{y_0},{z_0}} \right)\left( {z - {z_0}} \right) = 0\)
         <br><br>We can also get the same equation using a more straightforward formula. To start, we will use the equation \(z = f \left(x,y \right)\), where we want to find a tangent plane to that surface at \(\left(x_0,y_0,z_0 \right)\).
+        <br><br>\(f\left( {x,y} \right) - z = 0\)
+        <br><br>Using this definition, let's define a new function:
+        <br><br>\(F\left( {x,y,z} \right) = f\left( {x,y} \right) - z\)
+        <br><br>Notice that z=f(x,y) is identical to the surface given by F(x,y,z) = 0. So this equation is now correct as the previous tangent plane equation.
+        <br><br>As such, we need to find the gradient vector for F:
+        <br><br>\(\nabla F = \left\langle {{F_x},{F_y},{F_z}} \right\rangle  = \left\langle {{f_x},{f_y}, - 1} \right\rangle\)
+        <br><br>Notice that:
+        <h3 class="text-center mb-0 fs-6">\(\begin{array}{c}{F_x} = \frac{\partial }{{\partial x}}\left( {f\left( {x,y} \right) - z} \right) = {f_x}\hspace{0.75in}{F_y} = \frac{\partial }{{\partial y}}\left( {f\left( {x,y} \right) - z} \right) = {f_y}\\ \\{F_z} = \frac{\partial }{{\partial z}}\left( {f\left( {x,y} \right) - z} \right) =  - 1\end{array}\)</h3>
+        <h3 class="text-start mb-0 fs-6">The equation of the tangent plane is then:
+        <br><br>\({f_x}\left( {{x_0},{y_0}} \right)\left( {x - {x_0}} \right) + {f_y}\left( {{x_0},{y_0}} \right)\left( {y - {y_0}} \right) - \left( {z - {z_0}} \right) = 0\)
+        <br><br>Solving for z, we get:
+        <br><br>\(z = f\left( {{x_0},{y_0}} \right) + {f_x}\left( {{x_0},{y_0}} \right)\left( {x - {x_0}} \right) + {f_y}\left( {{x_0},{y_0}} \right)\left( {y - {y_0}} \right)\)
+        <br><br>Recall that a point and a parallel vector determine a line to see why this is the case. We want a line perpendicular to the surface at the point \(\left(x_0, y_0, z_0 \right)\), which means that the direction vector of the line must be normal to the surface at that point.
+        <br><br>We already know that \(\nabla f \left(x_0, y_0, z_0 \right)\) is normal to the surface so that we can use it as the direction vector of the line. Furthermore, the point \(\left (x_0, y_0, z_0 \right)\) is also on the line, so we can use it as the line's starting point. 
+        <br><br>Therefore the equation of the normal line is given by the vector equation \(\vec{r}(t) = \left(x_0, y_0, z_0 \right) + t,\nabla f \left(x_0, y_0, z_0 \right)\), where t is a scalar parameter. This equation represents a line that passes through the point \(\left(x_0, y_0, z_0\right)\) and is perpendicular to the surface at that point. 
     </h3>
     </div>
 

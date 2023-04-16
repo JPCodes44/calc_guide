@@ -96,11 +96,84 @@
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">Change of variables is taking an integral in cartesian coordinates in terms of u. For double and triple integrals to polar coordinates, we can use a change of variables to simplify certain areas to make it easier for us to compute, just like the equation of a disk. To use a change of variables, we will apply a transformation.
         <br><br>Let's see an example of this:
-        <br><br>Notice that If we want to transform a specific region, we must determine the equations for u and v that were given a particular function and the range for u and v.
+        <div class="proof">
+            <h3 class="sameline text-start fw-bold fst-italic mb-0 fs-6">Example 1</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Determine the new region that we get by applying the given transformation to the region where \(R\) is the ellipse \({x^2} + \dfrac{{{y^2}}}{{36}} = 1\) and the transformation is \(x = \dfrac{u}{2}\), \(y = 3v\).</h3>
+            <details class="sameline">
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-4 fs-6">There's not a lot we can do with this one, except for plugging in the transformation into the equation for the ellipse and seeing what happens.</h3>
+                <h3 class="text-center mb-4 fs-6">\(\begin{align*}{\left( {\dfrac{u}{2}} \right)^2} + \dfrac{{{{\left( {3v} \right)}^2}}}{{36}} & = 1\\ \\ \dfrac{{{u^2}}}{4} + \dfrac{{9{v^2}}}{{36}} & = 1\\ \\ {u^2} + {v^2} & = 4\end{align*}\)</h3>
+                <h3 class="text-start mb-0 fs-6">So, we started out with an ellipse and after the transformation we had a disk of radius 2.</h3>
+            </details>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Notice that If we want to transform a specific region, we must determine the equations for u and v that were given a particular function and the range for u and v.
         <br><br>Let's work with a quick example to see how we can do that: 
-        <br><br>For cases we are not given a transformation, we have to apply a jacobian which is defined by the following:
-        <br><br>Let's see how we can define the following jacobians for spherical and cylindrical coordinates:
-        <br><br>In conclusion, the following steps for performing a change of variables are as follows:
+        <div class="proof">
+            <h3 class="sameline text-start fw-bold fst-italic mb-0 fs-6">Example 2</h3>
+            <h3 class="sameline text-start mb-0 fs-6">For the region bounded by \(y =  - x + 4\), \(y=x+1\), and \(y= \dfrac{x}{3} - \dfrac{4}{3}\) and the transformation \(x = \dfrac{1}{2} \left(u+v \right)\), \(y = \dfrac{1}{2} \left(u-v \right)\) determine the ranges of \(u\) and \(v\) for each of the new equations from the transformation.</h3>
+            <details class="sameline">
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-4 fs-6">Since we've already seen the updated equations and the transformed region in the previous example, we don't need to dwell on them too much. Instead, let's have a brief rundown of how each of the original equations was transformed.</h3>
+                <h3 class="text-center mb-4 fs-6">\(\begin{align*} & y =  - x + 4& \Rightarrow & \hspace{0.25in}u = 4\\ & y = x + 1& \Rightarrow & \hspace{0.25in}v =  - 1\\ & y = \frac{x}{3} - \frac{4}{3}& \Rightarrow & \hspace{0.25in}v = \frac{u}{2} + 2\end{align*}\)</h3>
+                <h3 class="text-start mb-4 fs-6">Here is the new region we get under the transformation.</h3>
+                <h3 class="text-start mb-4 fs-6">It's worth noting that in this example, we were able to figure out the range of values for \(u\) and \(v\) for each equation by looking at the sketch above. However, this won't always be an option, as in many cases, we need to know the ranges for \(u\) and/or \(v\) to draw an accurate sketch of the transformed region.
+                <br><br>Now we can start to work on the problem at hand,
+                <br><br>To begin, let's consider the equation \(u = 4\). Since this equation specifies a single value of \(u\), we don't need to worry about a range of values. Instead, we need to determine the range of values for \(v\) that correspond to this equation.
+                <br><br>Let's start with the \(x\) transformation and plug in the known value of \(u\) for this equation. That gives,
+                <h3 class="text-center mb-4 fs-6">\(x = \frac{1}{2}\left( {u + v} \right) = \frac{1}{2}\left( {4 + v} \right)\)</h3>
+                <h3 class="text-start mb-4 fs-6">We've established that the range of \(x\) values for the original equation, \(y = -x + 4\), is \(\dfrac{3}{2} \leq x \geq 4\). Since we know how \(x\) is related to \(v\) from our previous calculations, we can substitute the expression for \(x\) in terms of \(v\) into this range and manipulate it to obtain the corresponding range of \(v\) values.</h3>
+                <h3 class="text-center mb-4 fs-6">\(\begin{array}{c}\displaystyle \frac{3}{2} \le x \le 4\\ \displaystyle  \frac{3}{2} \le \frac{1}{2}\left( {4 + v} \right) \le 4\\ 3 \le 4 + v \le 8\\ - 1 \le v \le 4\end{array}\)</h3>
+                <h3 class="text-start mb-4 fs-6">Using the information we obtained from the previous calculations, we can determine that the range of \(v\) values for \(u = 4\) is \(-1 \leq v \geq 4\). This range matches up nicely with our expectations based on the graph of the transformed region.
+                <br><br>Note that we could just as easily used the \(y\) transformation and \(y\) range for the original equation and gotten the same result.
+                <br><br>Okay, let's now move onto \(v = -1\) and we won't put in quite as much explanation for this part
+                <br><br>We don't need to find a range of \(v\) values in this case, as there's only a single value of \(v\). To determine the range of \(u\) values, we can start by using the expression for \(x\) in terms of \(v\) and substitute \(v = -1\) into it. Then, we can use the range of \(x\) values from the original equation, \(y = x + 1\), to determine the corresponding range of \(u\) values.
+                <br><br>Here is that work.
+                <h3 class="text-center mb-4 fs-6">\(\begin{array}{c}\displaystyle  - \frac{7}{2} \le x \le \frac{3}{2}\\ \displaystyle  - \frac{7}{2} \le \frac{1}{2}\left( {u - 1} \right) \le \frac{3}{2}\\   - 7 \le u - 1 \le 3\\  - 6 \le u \le 4\end{array}\)</h3>
+                <h3 class="text-start mb-4 fs-6">We can use the expression we obtained earlier to determine that the range of \(u\) values for \(v = -1\) is \(-6 ≤ u ≤ 4\). This range corresponds to what we can see on the graph of the transformed region. It's worth noting that we could have also used the range of \(y\) values to obtain this result.
+                <br><br>To determine the range of \(u\) and \(v\) values for \(v = u^2 + 2\), we'll use the transformation involving \(y\) values. Starting with the range of \(y\) values for the original equation, \(y = x^3 - \frac{4}{3}\), we can substitute the expression for \(y\) in terms of \(v\) and then substitute \(v = u^2 + 2\). After doing this, we'll have an expression for the range of \(u\) values in terms of \(y\).
+                <br><br>Here is the following work:
+                <h3 class="text-center mb-4 fs-6">\(\begin{array}{c} \displaystyle - \frac{5}{2} \le y \le 0\\ \displaystyle  - \frac{5}{2} \le \frac{1}{2}\left( {u - \left( {\frac{u}{2} + 2} \right)} \right) \le 0\\ \displaystyle  - 5 \le \frac{u}{2} - 2 \le 0\\ \displaystyle  - 3 \le \frac{u}{2} \le 2\\  - 6 \le u \le 4\end{array}\)
+                </h3>
+                <h3 class="text-start mb-4 fs-6">So, again we get the range of \(u\)'s we expect to get from the graph. Once we have those the appropriate range of \(v\) can be found from the equation itself as follows,</h3>
+                <h3 class="text-center mb-4 fs-6">\(\begin{array}{c} \displaystyle  - 6 \le u \le 4\\  - 3 \le \frac{u}{2} \le 2\\ \displaystyle  - 1 \le \frac{u}{2} + 2 \le 4\\  - 1 \le v \le 4\end{array}\)</h3>
+                <h3 class="text-start mb-0 fs-6">To determine the range of \(v\) values for each side of the transformed region, we start with the range of \(u\) values and use it to build up the equation for that particular side. Once we have the equation for the side, we can then obtain the range of \(v\) values that corresponds to it.</h3>
+            </details>
+        </div>
+        <h3 class="text-start mb-4 fs-6">For cases we are not given a transformation, we have to apply a jacobian which is defined by the following:
+            <h3 class="text-start fw-bold mb-0 fs-6">Definition:</h3>
+            <div class="fact">
+                <h3 class="sameline text-start mb-4 fs-6">The <b>jacobian</b> of the transformation \(x = g \left(u,b \right)\), \(y = h \left(u,v \right)\) is,</h3>
+                <h3 class="text-center mb-4 fs-6">\(\dfrac{{\partial \left( {x,y} \right)}}{{\partial \left( {u,v} \right)}} = \left| {\begin{array}{*{20}{c}}{ \displaystyle \frac{{\partial x}}{{\partial u}}}&{ \displaystyle \frac{{\partial x}}{{\partial v}}}\\{ \displaystyle \frac{{\partial y}}{{\partial u}}}& \displaystyle {\frac{{ \partial y}}{{\partial v}}}\end{array}} \right|\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Let's see how we can define the following jacobians for spherical and cylindrical coordinates:
+        <div class="proof">
+            <h3 class="sameline text-start fw-bold mb-0 fs-6">Example 3</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Show that when changing to polar coordinates we have \(dA = r\,dr\,d\theta\)</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-0 fs-6">In this section, we're providing a justification for the formula that was previously used when integrating with respect to polar coordinates. To accomplish this, we just need to use the formula given above for \(dA\).
+                <br><br>The transformation here is the standard conversion formulas,</h3>
+                <h3 class="text-center mb-4 fs-6">\(x = r\cos \theta \hspace{0.25in}\hspace{0.25in}y = r\sin \theta\)</h3>
+                <h3 class="text-start mb-4 fs-6">The Jacobian for this transformation is,</h3>
+                <h3 class="text-center mb-4 fs-6">\(\begin{align*}\frac{{\partial \left( {x,y} \right)}}{{\partial \left( {r,\theta } \right)}} & = \left| {\begin{array}{*{20}{c}}{\displaystyle \frac{{\partial x}}{{\partial r}}}&{\displaystyle \frac{{\partial x}}{{\partial \theta }}}\\\displaystyle {\frac{{\partial y}}{{\partial r}}}&\displaystyle {\frac{{\partial y}}{{\partial \theta }}}\end{array}} \right|\\ &  = \left| {\begin{array}{*{20}{c}}{\cos \theta }&{ - r\sin \theta }\\{\sin \theta }&{r\cos \theta }\end{array}} \right|\\ &  = r{\cos ^2}\theta  - \left( { - r{{\sin }^2}\theta } \right)\\ &  = r\left( {{{\cos }^2}\theta  + {{\sin }^2}\theta } \right)\\ &  = r\end{align*}\)</h3>
+                <h3 class="text-start mb-4 fs-6">We then get,</h3>
+                <h3 class="text-center mb-4 fs-6">\(dA = \left| {\dfrac{{\partial \left( {x,y} \right)}}{{\partial \left( {r,\theta } \right)}}} \right|\,dr\,d\theta  = \left| r \right|dr\,d\theta  = r\,dr\,d\theta\)</h3>
+            </details>
+            
+            </div>
+    <h3 class="text-start mb-4 fs-6">In conclusion, the following steps for performing a change of variables are as follows:
         <div class = "proof"><ol>
             <li>Read the damn question.</li>
             <li>Write down all of the necessary equations.</li>
@@ -109,7 +182,6 @@
             <li>if given an integral, solve the jacobian for the following equations to determine dA or dV.</li>
             <li>Done!</li>
         </ol></div>
-        </h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

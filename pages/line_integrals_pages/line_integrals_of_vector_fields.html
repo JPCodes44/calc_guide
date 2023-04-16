@@ -94,18 +94,37 @@
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
         <h3 class="text-start fs-5">Chapter 5.4 : Line Integrals of Vector Fields</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">
-        <br><br>In this section, we will evaluate line integrals of vector fields instead of functions. 
+        <h3 class="text-start mb-4 fs-6">In this section, we will evaluate line integrals of vector fields instead of functions. 
         <br><br>Let's suppose we have the following vector field:
-        <br><br>And the three-dimensional, smooth curve is given by:
-        <br><br>Note that we have the dot product of the vector field where the differential is a vector. In fact, F(r(t)) represents:
-        <br><br>It is also possible to express line integrals of vector fields by using a line integral with respect to arc length. For example, this can be done in the following manner:
-        <br><br>Where \(T \left(t \right)\) is the unit tangent vector given by:
-        <br><br>By subbing the unit tangent into the arc length integral, we get the same equation as before:
-        <br><br>We use the first form to evaluate these line integrals because it is usually more straightforward. Now, let's examine a few examples.
+        <h3 class="text-center mb-4 fs-6">\(\vec F\left( {x,y,z} \right) = P\left( {x,y,z} \right)\vec i + Q\left( {x,y,z} \right)\vec j + R\left( {x,y,z} \right)\vec k\)</h3>
+        <h3 class="text-start mb-4 fs-6">And the three-dimensional, smooth curve is given by:
+        <h3 class="text-center mb-4 fs-6">\(\vec r\left( t \right) = x\left( t \right)\vec i + y\left( t \right)\vec j + z\left( t \right)\vec k\hspace{0.25in}\hspace{0.25in}a \le t \le b\)
+            <div class="fact">
+                <h3 class="text-start mb-4 fs-6">The <b>line integral of \(\vec{F}\) along \(C\)</b> is,</b></h3>
+                <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{\vec F\centerdot d\,\vec r}} = \int_{{\,a}}^{{\,b}}{{\vec F\left( {\vec r\left( t \right)} \right)\centerdot \vec r'\left( t \right)\,dt}}\)</h3>
+            </div>
+        <h3 class="text-start mb-4 fs-6">Note that we have the dot product of the vector field where the differential is a vector. In fact, F(r(t)) represents:
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle \vec F\left( {\vec r\left( t \right)} \right) = \vec F\left( {x\left( t \right),y\left( t \right),z\left( t \right)} \right)\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">It is also possible to express line integrals of vector fields by using a line integral with respect to arc length. For example, this can be done in the following manner:
+        <h3 class="text-center mb-0 fs-6">\(\displaystyle\int\limits_{C}{{\vec F\centerdot d\,\vec r}} = \int\limits_{C}{{\vec F\centerdot \vec T\,ds}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Where \(T \left(t \right)\) is the unit tangent vector given by:
+        <h3 class="text-center mb-4 fs-6">\(\vec T\left( t \right) = \dfrac{{\vec r'\left( t \right)}}{{\left\| {\vec r'\left( t \right)} \right\|}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">By subbing the unit tangent into the arc length integral, we get the same equation as before:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \begin{align*}\int\limits_{C}{{\vec F\centerdot d\,\vec r}} & = \int\limits_{C}{{\vec F\centerdot \vec T\,ds}}\\ &  = \int_{{\,a}}^{{\,b}}{{\vec F\left( {\vec r\left( t \right)} \right)\centerdot \frac{{\vec r'\left( t \right)}}{{\left\| {\vec r'\left( t \right)} \right\|}}\,\,\left\| {\vec r'\left( t \right)} \right\|\,dt}}\\ &  = \int_{{\,a}}^{{\,b}}{{\vec F\left( {\vec r\left( t \right)} \right)\centerdot \vec r'\left( t \right)\,dt}}\end{align*}\)</h3>
+        <h3 class="text-start mb-4 fs-6">We use the first form to evaluate these line integrals because it is usually more straightforward.
         <br><br>To conclude this section, we will perform a general example to establish a helpful connection between line integrals of vector fields and line integrals with respect to \(x\), \(y\), and \(z\).
-        <br><br>Therefore we have:
-        <br><br>And don't forget about how reversing the direction of integration affects the integral:
+        <br><br>Given the following vector function \(\vec F\left( {x,y,z} \right) = P\,\vec i + Q\,\vec j + R\,\vec k\) and the curve \(C\) parameterized by \(\vec r\left( t \right) = x\left( t \right)\vec i + y\left( t \right)\vec j + z\left( t \right)\vec k\) the line integral is,</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \begin{align*}\int\limits_{C}{{\vec F\centerdot d\,\vec r}} & = \int_{{\,a}}^{{\,b}}{{\left( {P\,\vec i + Q\,\vec j + R\,\vec k} \right)\centerdot \left( {x'\,\vec i + y'\,\vec j + z'\,\vec k} \right)\,dt}}\\ &  = \int_{{\,a}}^{{\,b}}{{Px' + Qy' + Rz'\,dt}}\\ &  = \int_{{\,a}}^{{\,b}}{{Px'\,dt}} + \int_{{\,a}}^{{\,b}}{{Qy'\,dt}} + \int_{{\,a}}^{{\,b}}{{Rz'\,dt}}\\ &  = \int\limits_{C}{{P\,dx}} + \int\limits_{C}{{Q\,dy}} + \int\limits_{C}{{R\,dz}}\\ &  = \int\limits_{C}{{P\,dx}} + Q\,dy + R\,dz\end{align*}\)</h3>
+        <h3 class="text-start mb-4 fs-6">Therefore we have:
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{\vec F\centerdot d\,\vec r}} = \int\limits_{C}{{P\,dx}} + Q\,dy + R\,dz\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">And don't forget about how reversing the direction of integration affects the integral:</h3>
+        <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\(\displaystyle \int\limits_{C}{{\vec F\centerdot d\,\vec r}} = \int\limits_{C}{{P\,dx}} + Q\,dy + R\,dz\)</h3>
+    </div>
         </h3>
     </div>
 

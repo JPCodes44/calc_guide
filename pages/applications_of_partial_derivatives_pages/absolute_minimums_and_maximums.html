@@ -96,16 +96,25 @@
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">Extending upon the previous section, We will optimize a function and identify the absolute minimum and maximum in \(\mathbb{R}^2\).
         <br><br>Lets first state a couple of definitions first:
-        <br><br>In two-dimensional space \(\mathbb{R}^2\), a region is considered closed if it contains all its boundary points. Conversely, an area is open if it doesn't have any of its boundary points.
-        <br><br>A region is considered bounded if it can be contained within a finite area, such as a disk or a circular region. In other words, it is considered bounded if a limited shape can completely enclose a region.
-        <br><br>The math notation for open and closed you have already seen before.
-        <br><br>These definitions are important because, for the extreme value theory, we require a closed, bounded set \(D\) in \(\mathbb{R}^2\).
-        <br><br>Extreme Value Theorem:<div class="fact">If a function \(f \left(x,y \right)\) is continuous within a closed, bounded two-dimensional set \(D\). There exist two points \(f \left(x_1,y_1 \right)\) and \(f \left(x_2,y_2 \right)\) within \(D\) such that \(f \left(x_1,y_1 \right)\) is the absolute maximum and \(f \left(x_2,y_2 \right)\) is the absolute minimum of the function within \(D\). In other words, if a function is defined over a closed and bounded region, it must have a maximum and minimum value within that region.</div>
-        <br>This theorem does NOT tell us where the absolute minimum or absolute maximum will occur, but it only tells us if they exist. Note that the absolute minimum or maximum could occur in the interior or exterior region. 
-        <br><br>Here is the process for finding absolute extrema:<div class="proof">First, find all critical points within \(D\) and determine the function value at each point to determine a function's absolute minimum and maximum over a given region \(D\). 
-        <br><br>Next, find all extrema of the function on the boundary of \(D\), using methods from Calculus I. 
-        <br><br>Finally, compare the values found in the first two steps to determine the absolute minimum and maximum of the function over the entire region.</div>
-        <br>Let's look at a more manageable problem with a distinct boundary.
+        <h3 class="text-start mb-0 fw-bold fs-6">Definitions</h3>
+        <div class="fact">
+        <ol>
+        <li><h3 class="text-start mb-4 fs-6">In two-dimensional space \(\mathbb{R}^2\), a region is considered closed if it contains all its boundary points. Conversely, an area is open if it doesn't have any of its boundary points.</h3></li>
+        <li><h3 class="text-start mb-0 fs-6">A region is considered bounded if it can be contained within a finite area, such as a disk or a circular region. In other words, it is considered bounded if a limited shape can completely enclose a region.</h3></li>
+        </ol></h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">The math notation for open and closed you have already seen before.
+    `   <h3 class="text-center mb-4 fs-6">\(\begin{array}{*{20}{c}}\begin{aligned}{\mbox{Open}} \,\,\,\,\,\, \\ - 5 < x < 3\\ \,\,\,1 < y < 6\end{aligned}&\begin{aligned}{\mbox{Closed}}\,\,\,\,\,\\ \hspace{0.25in} - 5 \le x \le 3\\ \,\,\,\hspace{0.25in}\,\,\,1 \le y \le 6\end{aligned}\end{array}\)</h3>
+        <h3 class="text-start mb-4 fs-6">These definitions are important because, for the extreme value theory, we require a closed, bounded set \(D\) in \(\mathbb{R}^2\).
+        <h3 class="text-start mb-0 fw-bold fs-6">Extreme Value Theorem:</h3><div class="fact"> 
+        <h3 class="text-start mb-0 fs-6">If a function \(f \left(x,y \right)\) is continuous within a closed, bounded two-dimensional set \(D\). There exist two points \(f \left(x_1,y_1 \right)\) and \(f \left(x_2,y_2 \right)\) within \(D\) such that \(f \left(x_1,y_1 \right)\) is the absolute maximum and \(f \left(x_2,y_2 \right)\) is the absolute minimum of the function within \(D\). In other words, if a function is defined over a closed and bounded region, it must have a maximum and minimum value within that region.</h3></div>
+        <h3 class="text-start mb-4 fs-6">This theorem does NOT tell us where the absolute minimum or absolute maximum will occur, but it only tells us if they exist. Note that the absolute minimum or maximum could occur in the interior or exterior region. 
+        <br><br>Here is the process for finding absolute extrema:
+        <div class="fact"><ol><li><h3 class="text-start mb-4 fs-6">First, find all critical points within \(D\) and determine the function value at each point to determine a function's absolute minimum and maximum over a given region \(D\).</h3></li>
+        <li><h3 class="text-start mb-4 fs-6">Next, find all extrema of the function on the boundary of \(D\), using methods from Calculus I. </h3></li>
+        <li><h3 class="text-start mb-0 fs-6">Finally, compare the values found in the first two steps to determine the absolute minimum and maximum of the function over the entire region.</h3></li>
+        </ol></div>
+        Let's look at a more manageable problem with a distinct boundary.
         <br><br>Note that absolute extrema do not have to occur on the boundaries, but it can also occur within the interior of the function. It just depends on the surface.
         </h3>
     </div>

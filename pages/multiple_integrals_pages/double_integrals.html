@@ -94,19 +94,58 @@
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
         <h3 class="text-start fs-5">Chapter 4.2 : Double Integrals</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">
-        <br><br>Reviewing the definition of definite integrals for single-variable functions is essential for discussing double integrals. Specifically, when dealing with integrals, we will use the following definition:
-        <br><br>But first, let's look at box areas for the first cases of double integrals. 
-        <br><br>We can switch the order of \(d_y\) and \(d_x\) for these types of areas, as none of the bounds contain an independent variable. 
-        <br><br>Let's see an example:
-        <br><br>The \(d_y\) and \(d_x\) order matters for more general regions (areas with multiple functions). Furthermore, the boundaries containing a independent variable will go in front, while the set containing only constants will go at the back. 
-        <br><br>Let's look at both cases of these general areas:
-        <br><br>The double integrals for each case are as follows:
-        <br><br>Let's give some examples:
+        <h3 class="text-start mb-4 fs-6">Reviewing the definition of definite integrals for single-variable functions is essential for discussing double integrals. Specifically, when dealing with integrals, we will use the following definition:
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle\int_{{\,a}}^{{\,b}}{{f\left( x \right)\,dx}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">But first, let's look at box areas for the first cases of double integrals. 
+        <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\(\begin{array}{11}\displaystyle\iint_{{\,a,c}}^{{\,b,d}}{{f\left( x \right)\,dx dy}} \\ Or \\ \displaystyle\iint_{{\,a,c}}^{{\,b,d}}{{f\left( x \right)\,dx dy}}\end{array}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">We can switch the order of \(d_y\) and \(d_x\) for these types of areas, as none of the bounds contain an independent variable. </h3>
+
+        <h3 class="text-start mb-4 fs-6">But first, let's look at two general cases of double integrals that we need to consider before determining if we can switch dy and dx, given the following sketch:
+        <br><br>For case 1 where the \(x\) boundaries are fixed and the \(y\) values are varied:
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle\iint\limits_{D}{{f\left( {x,y} \right)\,dA}} = \int_{{\,a}}^{{\,b}}{{\int_{{{g_{\,1}}\left( x \right)}}^{{{g_{\,2}}\left( x \right)}}{{f\left( {x,y} \right)\,dy}}\,dx}}\)</h3>
+        <h3 class="text-start mb-4 fs-6">For case 2 where the \(y\) boundaries are fixed and the \(x\) values are varied:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle\iint\limits_{D}{{f\left( {x,y} \right)\,dA}} = \int_{{\,c}}^{{\,d}}{{\int_{{h{\,_1}\left( y \right)}}^{{{h_{\,2}}\left( y \right)}}{{f\left( {x,y} \right)\,dx}}\,dy}}\)</h3>        <h3 class="text-start mb-4 fs-6">Let's see an example:
         <br><br>Here is the following list of trig substitutions that will be necessary for calculus 3:
-        <br><br>But first, let's look at some examples that utilize these substitutions. 
-        <br><br>Note that the area of D is:
-        <br><br>And the volume of D is:
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><h3 class="text-center mb-0 fw-bold fs-6">Form</h3></th>
+                    <th><h3 class="text-center mb-0 fw-bold fs-6">Looks like</h3></th>
+                    <th><h3 class="text-center mb-0 fw-bold fs-6">Substitution</h3></th>
+                    <th><h3 class="text-center mb-0 fw-bold fs-6">Limit</h3></th>
+                </tr>
+            </thead>
+                <tbody>
+                  <tr>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(\sqrt {{b^2}{x^2} - {a^2}}\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\({\sec ^2}\theta  - 1 = \tan^{2} \theta\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(x = \dfrac{a}{b}\sec \theta\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(0 \le \theta  < \frac{\pi }{2},\,\,\frac{\pi }{2} < \theta  \le \pi\)</h3></td>
+                  </tr>
+                  <tr>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(\sqrt {{a^2} - {b^2}{x^2}}\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(1 - {\sin ^2}\theta  = {\cos ^2}\theta\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(x = \frac{a}{b}\sin \theta\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(- \frac{\pi }{2} \le \theta  \le \frac{\pi }{2}\)</h3></td>
+                  </tr>
+                  <tr>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(\sqrt {{a^2} + {b^2}{x^2}}\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\({\tan ^2}\theta  + 1 = {\sec ^2}\theta\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(x = \frac{a}{b}\tan \theta\)</h3></td>
+                    <td><h3 class="text-center mb-0 fw-bold fs-6">\(- \frac{\pi }{2} < \theta  < \frac{\pi }{2}\)</h3></td>
+                  </tr>
+                </tbody>
+              </table> 
+        Note that the area of D is:
+        <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\({\mbox{Area}} = \displaystyle\iint\limits_{R}{dA}\)</h3>
+        </div>
+        <h3 class="text-start mb-0 fs-6">And the volume of D is:</h3>
+        <div class="fact">
+        <h3 class="text-center mb-0 fs-6">\({\mbox{Volume}} = \displaystyle\iint\limits_{R}{{f\left( {x,y} \right)\,dA}}\)</h3>
+        </div>
         </h3>
     </div>
 

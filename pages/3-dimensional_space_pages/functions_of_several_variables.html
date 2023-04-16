@@ -97,8 +97,10 @@
         <h3 class="text-start mb-4 fs-6">The basic ideas of functions containing more than one variable involve functions of two variables in \(\mathbb{R}^3\). An example would be a quadric surface. For example, here is the graph:
         <br><br>Another frequently encountered graph in this course is that of a plane, and we have a standard convention for graphing planes that makes them easier to visualize.
         <br><br>Recall that the equation of a plane is:
-        <br><br>We can also solve for \(z\), which would give us the function notation:
-        <br><br>To graph a plane, we usually locate its intersection points with the three axes and then connect those points to form a triangle. This triangle represents a portion of the plane, giving us a reasonable idea of its overall shape. For instance, we want to graph the plane defined by an equation:
+        <h3 class="text-center mb-4 fs-6">\(ax + by + cz = d\)</h3>
+        <h3 class="text-start mb-4 fs-6">We can also solve for \(z\), which would give us the function notation:</h3>
+        <h3 class="text-center mb-4 fs-6">\(f \left(x,y \right) = Ax + By + D\)</h3>
+        <h3 class="text-start mb-4 fs-6">To graph a plane, we usually locate its intersection points with the three axes and then connect those points to form a triangle. This triangle represents a portion of the plane, giving us a reasonable idea of its overall shape. For instance, we want to graph the plane defined by an equation:
         <br><br>for graphing we can replace \(f(x,y)\) for \(z\):
         <br><br>Now we can use traces to set \(x,y = 0\) to locate the intersection on the \(z\)-axis and \(x,z = 0\) to locate the facts on the \(y\)-axis etc.
         <br><br>Here is the graph of the plane.
@@ -106,10 +108,86 @@
         <br><br>The following paragraph discusses the concept of level curves, also known as contour curves, which are two-dimensional curves obtained by setting a function equal to a constant value. For example, if the function is given by \(z=f(x,y)\), then the equation of the level curves is \(f(x,y)=k\), where k is any constant number.
         <br><br>In some cases, the equation may be in the form \(f(x,y,z)=0\), and in these situations, the equation of the level curves is \(f(x,y,k)=0\). An example of level curves is the elevation map of a piece of land, which gives the contour curves for the function representing the elevation in the area.
         <br><br>Let's do a quick example of this.
-        <br><br>Imagine contours as the intersections of the surface moving through the surface as the \(k\) value is increasing/decreasing.
+
+        <br><div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 1</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Determine the domain of each of the given functions.</h3>
+            <ol type="a">
+                <li>\(f \left(x,y \right) = \dfrac{x}{y}\)</li>
+                <li>\(f \left(x,y \right) = \sqrt{x} + y\)</li>
+                <li>\(f \left(x,y \right) = \ln \left(3 - x^2 - 3y^2 \right)\)</li>
+            </ol>
+            <h3 class="text-start mb-4 fs-6">(a) \(f \left(x,y \right) = \dfrac{x}{y}\)</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-4 fs-6"> It is clear that y cannot be 0 because or else the function would be undefined so:</h3>
+                <h3 class="text-center mb-4 fs-6">\(y \neq 0\)</h3>
+            </details>
+            <br>
+            <h3 class="text-start mb-4 fs-6">(b) \(f \left(x,y \right) = \sqrt{x} + y\)</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-4 fs-6"> It is clear that x cannot be less than 0 because or else the function would be undefined so:</h3>
+                <h3 class="text-center mb-4 fs-6">\(x \geq 0\)</h3>
+            </details>
+            <br>
+            <h3 class="text-start mb-4 fs-6">(c) \(f \left(x,y \right) = \ln \left(3 - x^2 - 3y^2 \right)\)</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-4 fs-6"> We should note that we cannot take the natural log of a negative number so we have the following domain:</h3>
+                <h3 class="text-center mb-4 fs-6">\(3 - {x^2} - 3{y^2} > 0\hspace{0.25in} \Rightarrow \hspace{0.25in}\,\,\,\frac{{{x^2}}}{3} + {y^2} < 1\)</h3>
+                <h3 class="text-start mb-4 fs-6">We should also note that we obtain the following sketch of an ellipse:</h3>
+            </details>
+        </div>
+        <div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 2</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Determine the domain of the given function.</h3>
+            <h3 class = "text-center mb-0 fs-6">\(f\left( {x,y,z} \right) = \dfrac{1}{{\sqrt {{x^2} + {y^2} + {z^2} - 8} }}\)</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-0 fs-6">We should note that we cannot take the square root of a negative number so we have the following domain:</h3>
+                <br>
+                <h3 class="text-center mb-0 fs-6">\({x^2} + {y^2} + {z^2} - 8 > 0\hspace{0.25in}\,\,\,\,\, \Rightarrow \hspace{0.25in}\,\,\,{x^2} + {y^2} + {z^2} > 8\)</h3>
+                <br>
+                <h3 class="text-start mb-0 fs-6">The domain of a function is the set of all possible input values for which the function is defined. In this case, the function is defined only for input points outside a sphere with a radius of \(\sqrt{8}\) and centred at the origin. So, the function's domain consists of all points in space that are not inside this sphere.</h3>
+            </details>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Imagine contours as the intersections of the surface moving through the surface as the \(k\) value is increasing/decreasing.
         <br><br>We will look at level surfaces for functions containing three variables, where \(k = f(x,y,z)\) and k can include any number.
         <br><br>This last section introduces the concept of traces, which are curves that represent the intersection of a surface and a plane given by \(x=a\) or \(y=b\). Traces are similar to contours, which are the intersection of a surface with a plane \(z=k\), as explained earlier. In other words, contours and traces represent the intersection of a surface with a plane, but contours are obtained by varying the value of \(z\), while traces are obtained by changing the value of \(x\) or \(y\).
         <br><br>Let's take a quick look at an example of traces.</h3>
+        <div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 3</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Identify the level curves of \(f \left(x,y \right) = \sqrt{\dfrac{x^2}{2} + \dfrac{y^2}{4}}\)</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-0 fs-6">To identify the surface given by \(f \left(x,y \right)\), let's rewrite the surface formula as:</h3>
+                <br>
+                <h3 class="text-center mb-0 fs-6">\(z = \sqrt{\dfrac{x^2}{2} + \dfrac{y^2}{4}}\)</h3>
+                <br>
+                <h3 class="text-start mb-0 fs-6">We should note that the equation inside the square root represents an ellipse of some sort, so we will also get move the square root to z:</h3>
+                <br>
+                <h3 class="text-center mb-0 fs-6">\(z^2 = \dfrac{x^2}{2} + \dfrac{y^2}{4}\)</h3>
+                <br>
+                <h3 class="text-start mb-0 fs-6">We will then obtain the following shape shown by this sketch:</h3>
+            </details>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

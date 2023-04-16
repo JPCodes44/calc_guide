@@ -100,14 +100,16 @@
         <br><br>To prove the first part, suppose \(\nabla f=0\) and sub in the definition for each component. 
         <br><br>Note that both components in the definition MUST be \(0\), or it is not a critical point. 
         <br><br>Fact:<div class="fact">If the point \(\left(a,b \right)\) is relative extrema of the function \(f \left(x,y \right)\) and its first order derivatives of \(f \left(x,y \right)\) exist at \(\left(a,b \right)\), then \(\left(a,b \right)\) is a critical point of \(f \left(x,y \right)\) giving \(\nabla f \left(a,b \right) = \vec{0}\).</div>
-        <br>To prove this fact, we will use Fermat's Theorem:
+        <h3 class="text-start mb-4 fs-6">To prove this fact, we will use Fermat's Theorem:
         <br><br>Proof:<div class="proof">Let's define \(g \left(x \right) = f \left(x,b \right)\) given that \(f \left(x,y \right)\) has relative extrema at \(\left(a,b \right)\). That means \(g \left(x \right)\) has a relative extremum at \(x = a\), and by Fermat's Theorem, we can say that \(g' \left(a \right) = 0\) because \(x = a\) is the relative extrema. All of these facts mean that \(\nabla f \left(a,b \right) = \vec{0}\), and so \(f \left(x,y \right)\) has a critical point at \(\left(a,b \right)\). </div>
         Note that all critical points are NOT relative extrema. However, all relative extrema will be critical points of the function.
         <br><br>For example, let's say we have a surface in \(\mathbb{R}^3\):
-        <br><br>Notice that the slope at the origin is \(0\) and is also a critical point. Does that mean the point is a maximum or a minimum? No. It will be called a saddle point as all four quadrants contain a higher value than \(f \left(0,0 \right)\). 
+        <h3 class="text-center mb-4 fs-6">\(f\left( {x,y} \right) = xy\)</h3>
+        <h3 class="text-start mb-4 fs-6">Notice that the slope at the origin is \(0\) and is also a critical point. Does that mean the point is a maximum or a minimum? No. It will be called a saddle point as all four quadrants contain a higher value than \(f \left(0,0 \right)\). 
         <br><br>So how can we determine if a critical point is a saddle point?
-        <br><br>Let's give the following facts:
-        <br><div class="fact">Suppose that \(\left(a,b \right)\) is a critical point of \(f \left(x,y \right)\) and that the second-order partial derivatives are continuous in some region that contains \(\left(a,b \right)\). Next, define,
+        <br><br>We can determine that by using the following facts:
+        <h3 class="text-start mb-0 fw-bold fs-6">Facts:</h3>
+        <div class="fact"><h3 class="text-start mb-4 fs-6">Suppose that \(\left(a,b \right)\) is a critical point of \(f \left(x,y \right)\) and that the second-order partial derivatives are continuous in some region that contains \(\left(a,b \right)\). Next, define,
         \(D = D \left(a,b \right) = f_{xx} \left(a,b \right) f_{yy} \left(a,b \right) - [f_{xy} \left(a,b \right)]^2\).
         <br><br>We then have the following classifications of the critical point:
         <br><br><ol>
@@ -115,8 +117,8 @@
             <li>If \(D > 0\) and \(f_{xx} \left(a,b \right) < 0\) then there is a relative maximum at \(\left(a,b \right)\).</li>
             <li>If \(D > 0\) then the point\(\left(a,b \right)\) is a saddle point.</li>
             <li>If \(D = 0\), the point \(\left(a,b \right)\) may be a relative minimum, maximum, or saddle point, other techniques need to be used to classify the critical point.</li>
-        </ol></div>
-        <br>Keep in mind that if both \(D > 0\), then both \(f_{xx} \left(a,b \right)\) and \(f_{yy} \left(a,b \right)\) will have the same sign.
+        </ol></h3></div>
+        <h3 class="text-start mb-4 fs-6"><br>Keep in mind that if both \(D > 0\), then both \(f_{xx} \left(a,b \right)\) and \(f_{yy} \left(a,b \right)\) will have the same sign.</h3>
     </h3>
     </div>
 

@@ -96,15 +96,36 @@
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class = "text-start mb-4 fs-6">This section will briefly cover the limits, derivatives, and integrals of vector functions. These mathematical concepts demonstrate consistent and predictable behaviour, as you will discover. Additionally, while we will only work with three-dimensional space \(\mathbb{R}^3\), the formulas and methods presented can be easily extended to n-dimensional space \(\mathbb{R}^n\).
         <br><br>Let's begin with the limit of a vector function:
+        <br><br>\(\begin{align*}\mathop {\lim }\limits_{t \to a} \vec r\left( t \right) & = \mathop {\lim }\limits_{t \to a} \left\langle {f\left( t \right),g\left( t \right),h\left( t \right)} \right\rangle \\ \\ &  = \left\langle {\mathop {\lim }\limits_{t \to a} f\left( t \right),\mathop {\lim }\limits_{t \to a} g\left( t \right),\mathop {\lim }\limits_{t \to a} h\left( t \right)} \right\rangle \\ \\ &  = \mathop {\lim }\limits_{t \to a} f\left( t \right)\vec i + \mathop {\lim }\limits_{t \to a} g\left( t \right)\vec j + \mathop {\lim }\limits_{t \to a} h\left( t \right)\vec k\end{align*}\)
         <br><br>In short, we take the limit of each component.
-        <br><br>For derivatives, the same principle applies.
+        <div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 1</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Compute \(\mathop {\lim }\limits_{t \to 1} \vec r\left( t \right)\) where \(\vec r\left( t \right) = \left\langle {{t^3},\displaystyle \frac{{\sin \left( {2t - 1} \right)}}{{t - 3}},{{\bf{e}}^{t}}} \right\rangle\)</h3>
+        <details>
+            <summary class="show">
+                Show Solution
+            </summary>
+            <hr>
+        <br>
+        <h3 class="sameline text-start mb-0 fs-6">Let's apply the limit principle:
+        <br><br>\(\begin{align*}\mathop {\lim }\limits_{t \to 1} \vec r\left( t \right) & = \left\langle {\mathop {\lim }\limits_{t \to 1} {t^3},\mathop {\lim }\limits_{t \to 1} \frac{{\sin \left( {2t - 2} \right)}}{{t - 3}},\mathop {\lim }\limits_{t \to 1} {{\bf{e}}^{t}}} \right\rangle \\ \\ &  = \left\langle {\mathop {\lim }\limits_{t \to 1} {t^3}, \mathop {\lim }\limits_{t \to 1} \frac{{2\cos \left( {2t - 2} \right)}}{3},\mathop {\lim }\limits_{t \to 1} {{\bf{e}}^{t}}} \right\rangle \\ \\ &  = \left\langle 1,2,{{\bf{e}}} \right\rangle \end{align*}\)
+        <br><br>Notice that L'Hopitals Rule was used on the y component because doing the limit initially would made the fractions undefined.</h3>
+        </details>
+        </div>
+        For derivatives, the same principle applies.
         <br><br>Even though these operations seem very obvious, we still need to identify some facts about derivatives within vector functions.
-        <br><br>There's one quick definition that we should clarify. A smooth curve refers to any curve in which \(r'(t)\) is continuous and \(r'(t)!=0\) for any \(t\), except potentially at the endpoints. A typical example of a smooth curve is a helix.
+        <h3 class = "text-start fw-bold mb-0 fs-6">Facts:</h3>
+        <div class="fact">
+            <h3 class="text-start mb-0 fs-6">\(\begin{align*}& \frac{d}{{dt}}\left( {\vec u + \vec v} \right) = \vec u' + \vec v'\\ & {\left( {c\vec u} \right)^\prime } = c\,\vec u'\\ & \frac{d}{{dt}}\left( {f\left( t \right)\vec u\left( t \right)} \right) = f'\left( t \right)\vec u\left( t \right) + f\left( t \right)\vec u'\left( t \right)\\ & \frac{d}{{dt}}\left( {\vec u\centerdot \vec v} \right) = \vec u'\centerdot \vec v + \vec u\centerdot \vec v'\\ & \frac{d}{{dt}}\left( {\vec u \times \vec v} \right) = \vec u' \times \vec v + \vec u \times \vec v'\\ & \frac{d}{{dt}}\left( {\vec u\left( {f\left( t \right)} \right)} \right) = f'\left( t \right)\vec u'\left( {f\left( t \right)} \right)\end{align*}\)</h3>
+        </div>
+        <h3 class = "text-start mb-0 fs-6">There's one quick definition that we should clarify. A smooth curve refers to any curve in which \(r'(t)\) is continuous and \(r'(t)!=0\) for any \(t\), except potentially at the endpoints. A typical example of a smooth curve is a helix.
         <br><br>Lastly, we will discuss the integration of vector functions. Given the guidance both limits and derivatives provide, it shouldn't be surprising that we also have the following for integrating indefinite integrals.
-        <br><br>The same goes for definite integrals.
-        <br><br>We put a constant as a vector for each indefinite integral inside the vector function instead of just a regular constant.
+        <br><br>\begin{align*}\int{{\vec r\left( t \right)\,dt}}  & = \left\langle {\int{{f\left( t \right)\,dt}},\int{{g\left( t \right)\,dt}},\int{{h\left( t \right)\,dt}}} \right\rangle  + \vec c\\ \int{{\vec r\left( t \right)\,dt}} & = \int{{f\left( t \right)\,dt}}\,\,\vec i + \int{{g\left( t \right)\,dt}}\,\,\vec j + \int{{h\left( t \right)\,dt}}\,\,\vec k + \vec c\end{align*}
+        <br>The same goes for definite integrals.
+        <br><br>\begin{align*}\int_{{\,a}}^{{\,b}}{{\vec r\left( t \right)\,dt}} & = \left\langle {\int_{{\,a}}^{{\,b}}{{f\left( t \right)\,dt}},\int_{{\,a}}^{{\,b}}{{g\left( t \right)\,dt}},\int_{{\,a}}^{{\,b}}{{h\left( t \right)\,dt}}} \right\rangle \\ \int_{{\,a}}^{{\,b}}{{\vec r\left( t \right)\,dt}} & = \int_{{\,a}}^{{\,b}}{{f\left( t \right)\,dt}}\,\,\vec i + \int_{{\,a}}^{{\,b}}{{g\left( t \right)\,dt}}\,\,\vec j + \int_{{\,a}}^{{\,b}}{{h\left( t \right)\,dt}}\,\,\vec k\end{align*}
+        <br>We put a constant as a vector for each indefinite integral inside the vector function instead of just a regular constant.
         <br><br>We will sometimes denote definite integrals as such:
-        <br><br>We can also evaluate the entire vector functions integral once as a whole.</h3>
+        <br><br>\begin{align*}\int_{{\,a}}^{{\,b}}{{\vec r\left( t \right)\,dt}} & = \left. {\left( {\left\langle {\int{{f\left( t \right)\,dt}},\int{{g\left( t \right)\,dt}},\int{{h\left( t \right)\,dt}}} \right\rangle } \right)} \right|_a^b\\ \int_{{\,a}}^{{\,b}}{{\vec r\left( t \right)\,dt}} & = \left. {\left( {\int{{f\left( t \right)\,dt}}\,\,\vec i + \int{{g\left( t \right)\,dt}}\,\,\vec j + \int{{h\left( t \right)\,dt}}\,\,\vec k} \right)} \right|_a^b\end{align*}
+        <br>We can also evaluate the entire vector functions integral once as a whole.</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

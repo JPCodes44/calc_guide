@@ -96,12 +96,46 @@
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">To determine the length of a vector function from \(a\le t \le b\), recall that the vector function in parametric form is \(x=f(t)\) \(y=g(t)\) \(z=h(t)\).
         <br><br>Then we can use the parametric functions to determine the arc length using the formula:
+        <br><br>\(L = {\displaystyle\int_{{\,a}}^{{\,b}}}{{\sqrt {{{\left[ {f'\left( t \right)} \right]}^2} + {{\left[ {g'\left( t \right)} \right]}^2}} \,dt}}\)
         <br><br>We can simplify this further to:
+        <br><br>\(\left\| {\vec r'\left( t \right)} \right\| = \sqrt {{{\left[ {f'\left( t \right)} \right]}^2} + {{\left[ {g'\left( t \right)} \right]}^2} + {{\left[ {h'\left( t \right)} \right]}^2}}\)
         <br><br>Therefore the arc length formula is:
+        <br><br>\(L = {\displaystyle\int_{{\,a}}^{{\,b}}}{{\left\| {\vec r'\left( t \right)} \right\|\,dt}}\)
         <br><br>We can also define the arc length function as:
+        <br><br>\(\left\| {\vec r'\left( t \right)} \right\| = \sqrt {{{\left[ {f'\left( t \right)} \right]}^2} + {{\left[ {g'\left( t \right)} \right]}^2} + {{\left[ {h'\left( t \right)} \right]}^2}}\)
         <br><br>Let's look at an example to see why this is important.
-        <br><br>We can re-parameterize the function in terms of \(s(t)\), by solving for \(t\) as follows:
-        <br><br>What is the purpose? <br>We can now indicate how much distance we have traveled \(s\) along the curve. Also, notice that we start the distance measurement at \(t=0\).</h3>
+        <div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 2</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Determine the arc length function for \(\vec r\left( t \right) = \left\langle {t,3\cos \left( {t} \right),4\cos \left( {2t} \right)} \right\rangle\)</h3>
+        <details>
+            <summary class="show">
+                Show Solution
+            </summary>
+        <hr>
+        <br>
+        <h3 class="text-start mb-4 fs-6">From the previous example, we know that,
+        <br><br>\(\left\| {\vec r'\left( t \right)} \right\| = 2\sqrt {10}\)
+        <br><br>The arc function is then,
+        <br><br>\(s\left( t \right) = {\displaystyle\int_{{\,0}}^{{\,t}}}{{2\sqrt {10} \,du}} = \left( {2\sqrt {10} \,u} \right)_0^t = 2\sqrt {10} \,t\)
+        <br><br>We can re-parameterize the function in terms of \(s \left(t \right) \)by solving for \(t\) as follows: 
+        <br><br>\(t = \dfrac{s}{{2\sqrt {10} }}\)
+    </details>
+        </div>
+        <h3 class="text-start mb-4 fs-6">What is the purpose?
+        <br><br>We can now indicate how much distance we have traveled \(\left(s \right)\) along the curve. Also, notice that we start the distance measurement at \(t=0\). 
+        </h3>
+        <div class="proof"><h3 class="sameline text-start mb-0 fw-bold fst-italic fs-6">Example 3</h3>
+            <h3 class="sameline text-start mb-0 fs-6">Where on the curve \(\vec r\left( t \right) = \left\langle {t,3\cos \left( {t} \right),4\cos \left( {2t} \right)} \right\rangle\) are we after traveling for a distance of \(\dfrac{\pi}{2}\)</h3>
+        <details>
+            <summary class="show">
+                Show Solution
+            </summary>
+        <hr>
+        <br>
+        <h3 class="text-start mb-4 fs-6">\(\vec r\left( {t\left( s \right)} \right) = \left\langle {\dfrac{s}{{\sqrt {10} }},3\sin \left( {\dfrac{s}{{\sqrt {10} }}} \right),3\cos \left( {\dfrac{s}{{\sqrt {10} }}} \right)} \right\rangle\)
+        <br><br>We will sub in \(\dfrac{\pi}{2}\) into the re-parametrized function to get our location:
+        <br><br>\(\vec r\left( {t\left( {\dfrac{{\pi \sqrt {10} }}{3}} \right)} \right) = \left\langle {\dfrac{\pi }{3},3\sin \left( {\dfrac{\pi }{3}} \right),3\cos \left( {\dfrac{\pi }{3}} \right)} \right\rangle  = \left\langle {\dfrac{\pi }{3},\dfrac{{3\sqrt 3 }}{2},\dfrac{3}{2}} \right\rangle\)</h3>
+    </details>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
