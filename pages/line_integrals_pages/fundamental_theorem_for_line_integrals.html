@@ -118,9 +118,9 @@
             <br><br>
             <ol>
                 <li>A vector field \(\vec{F}\) is considered conservative if there exists a function \(f\) that satisfies the equation \(\vec{F} = \nabla f\), where \(\nabla\) is the gradient operator. The function f is referred to as a potential function for the vector field. This definition was introduced in the first section of the current chapter.</li>
-                <li>\(\displaystyle \int_C \vec{F} \centerdot \vec{dr}\) is <b>independent-of-path</b> if \(\displaystyle \int_{C_1} \vec{F} \centerdot \vec{dr} = \int_{C_2} \vec{F} \centerdot \vec{dr}\) for any two paths \(C_1\) and \(C_2\) in \(D\) with the same initial and final points.</li>
+                <li>\(\displaystyle \int_C \vec{F} \centerdot \vec{dr}\) is <b>independent-of-path</b> if \(\displaystyle \int_{C_1} \vec{F} \centerdot \vec{dr} = \int_{C_2} \vec{F} \centerdot \vec{dr}\) for any two paths \(C_1\) and \(C_2\) in \(D\) have the same initial and final points.</li>
                 <li>A path \(C\) is called <b>closed</b> if the initial starting points are the same as the final ones.</li>
-                <li>A path \(C\) is <b>simple</b> if the path does not cross itself. For example, a figure 8 is not simple because the curve crosses itself./li>
+                <li>A path \(C\) is <b>simple</b> if the path does not cross itself. For example, a figure 8 is not simple because the curve crosses itself.</li>
                 <li>A region \(D\) is <b>open</b> if it doesn't contain any of it's boundary points.</li>
                 <li>A region \(D\) is <b>connected</b> if we can connect any two points in the region \(D\) and have the path lie completely in \(D\).</li>
                 <li>A region \(D\) is <b>simply-connected</b> if it is connected and contains no holes.</li>
@@ -130,17 +130,19 @@
         <h3 class="text-start mb-4 fs-6">With these definitions, we can obtain the following facts,</h3>
         <h3 class="text-start mb-0 fw-bold fs-6">Facts:</h3>
         <div class="fact">
+            <h3 class="text-start mb-0 fs-6">
             <ol>
-                <li>\(\displaystyle \int\limits_{C}{{\nabla f\centerdot \,d\,\vec r}}\) is independent of path
-                    <br>
+                <li>\(\displaystyle \int\limits_{C}{{\nabla f\cdot \,d\,\vec r}}\) is independent of path
+                    <br>To prove that the path taken doesn't affect the line integral, we just need to refer to a theorem stating that only the starting and ending points of a curve are required for the calculation.
                 </li>
-                <li>\(\displaystyle \int_C \vec{F} \centerdot \vec{dr}\) is <b>independent-of-path</b> if \(\displaystyle \int_{C_1} \vec{F} \centerdot \vec{dr} = \int C_2 \vec{F} \centerdot \vec{dr}\) for any two paths \(C_1\) and \(C_2\) in \(D\) with the same initial and final points.</li>
-                <li>A path \(C\) is called <b>closed</b> if the initial starting points are the same as the final ones.</li>
-                <li>A path \(C\) is <b>simple</b> if the path does not cross itself. For example, a figure 8 is not simple because the curve crosses itself./li>
-                <li>A region \(D\) is <b>open</b> if it doesn't contain any of it's boundary points.</li>
-                <li>A region \(D\) is <b>connected</b> if we can connect any two points in the region \(D\) and have the path lie completely in \(D\).</li>
-                <li>A region \(D\) is <b>simply-connected</b> if it is connected and contains no holes.</li>
+                <li>if \(\vec{F}\) is a conservative vector field then \(\displaystyle \int\limits_{C}{{\vec F\cdot \,d\,\vec r}}\) is independent of path.
+                    <br>It's also simple to demonstrate the following fact: if a vector field \(\vec{F}\) is conservative, then it possesses a potential function f, and the line integral can be expressed as \(\displaystyle \int_{C} \vec{F} \cdot d \vec{r} = \int_{C} \nabla f \cdot d \vec{r}\). By utilizing the previous fact, we know that this line integral is independent of path.
+                </li>
+                <li>If \(\vec{F}\) is a continuous vector field on an open connected region \(D\) and if \(\displaystyle \int\limits_{C}{{\vec F\cdot \,d\,\vec r}}\) is independent of path (for any path in \(D\)) then \(\vec{F}\) is a conservative vector field on \(D\)</li>
+                <li>If \(\displaystyle \int\limits_{C}{{\vec F\cdot \,d\,\vec r}}\) is independent of path then \(\displaystyle \int\limits_{C}{{\vec F\cdot \,d\,\vec r}} = 0\) for every closed path \(C\).</li>
+                <li>If \(\displaystyle \int\limits_{C}{{\vec F\cdot \,d\,\vec r}} = 0\) for every closed path \(C\) then \(\displaystyle \int\limits_{C}{{\vec F\cdot \,d\,\vec r}}\) is independent of path.</li>
             </ol>
+        </h3>
         </div>   
     </h3>
     </div>

@@ -32,7 +32,8 @@ hr {
     color: rgb(6, 0, 181);
 }
 ol li{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .table{
