@@ -29,6 +29,21 @@ var sliderHeightH2 = document.getElementById('heightH2');
 var sliderDepthH2 = document.getElementById('depthH2');
 var outputHeightH2 = document.getElementById("valueH2Y");
 var outputDepthH2 = document.getElementById("valueH2Z");
+// Hyperbolic paraboloid
+var sliderHp = document.getElementById('widthHp');
+var sliderHeightHp = document.getElementById('heightHp');
+var sliderDepthHp = document.getElementById('depthHp');
+var outputHp = document.getElementById("valueHpX");
+var outputHeightHp = document.getElementById("valueHpY");
+var outputDepthHp = document.getElementById("valueHpZ");
+// Elliptic paraboloid
+var sliderE = document.getElementById('widthE');
+var sliderHeightE = document.getElementById('heightE');
+var sliderDepthE = document.getElementById('depthE');
+var outputE = document.getElementById("valueEX");
+var outputHeightE = document.getElementById("valueEY");
+var outputDepthE = document.getElementById("valueEZ");
+
 
 // regular
 outputHeight.innerHTML = sliderHeight.value;
@@ -169,4 +184,69 @@ outputDepthH2.innerHTML = sliderDepthH2.value;
         var x = sliderDepthH2.value;
         var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
         sliderDepthH2.style.background = color;
+    });   
+
+
+// Hyperbolic paraboloid
+outputHeightHp.innerHTML = sliderHeightHp.value;
+outputDepthHp.innerHTML = sliderDepthHp.value;
+    outputHp.innerHTML = sliderHp.value;
+
+    sliderHp.oninput = function() {
+        outputHp.innerHTML = this.value;
+    }
+
+    sliderHeightHp.oninput = function() {
+        outputHeightHp.innerHTML = this.value;
+    }
+    sliderDepthHp.oninput = function() {
+        outputDepthHp.innerHTML = this.value;
+    }
+
+    sliderHp.addEventListener("mousemove", function() {
+        var x = sliderHp.value;
+        var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
+        sliderHp.style.background = color;
+    });
+    sliderHeightHp.addEventListener("mousemove", function() {
+        var x = sliderHeightHp.value;
+        var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
+        sliderHeightHp.style.background = color;
+    });
+    sliderDepthHp.addEventListener("mousemove", function() {
+        var x = sliderDepthHp.value;
+        var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
+        sliderDepthHp.style.background = color;
+    });   
+
+    // Elliptic paraboloid
+outputHeightE.innerHTML = sliderHeightE.value;
+outputDepthE.innerHTML = sliderDepthE.value;
+    outputE.innerHTML = sliderE.value;
+
+    sliderE.oninput = function() {
+        outputE.innerHTML = this.value;
+    }
+
+    sliderHeightE.oninput = function() {
+        outputHeightE.innerHTML = this.value;
+    }
+    sliderDepthE.oninput = function() {
+        outputDepthE.innerHTML = this.value;
+    }
+
+    sliderE.addEventListener("mousemove", function() {
+        var x = sliderE.value;
+        var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
+        sliderE.style.background = color;
+    });
+    sliderHeightE.addEventListener("mousemove", function() {
+        var x = sliderHeightE.value;
+        var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
+        sliderHeightE.style.background = color;
+    });
+    sliderDepthE.addEventListener("mousemove", function() {
+        var x = sliderDepthE.value;
+        var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
+        sliderDepthE.style.background = color;
     });   

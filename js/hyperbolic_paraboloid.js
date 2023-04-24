@@ -23,7 +23,7 @@ const canvas = document.getElementById('canvas-containerHp');
 
 material.color = new THREE.Color(0xff0000);
 
-const geometry = new ParametricGeometry(customEquation, 50, 50);
+const geometry = new ParametricGeometry(customEquation, 30, 30);
 const mesh = new THREE.Mesh( geometry, material );
 
 // Add the mesh to the scene
