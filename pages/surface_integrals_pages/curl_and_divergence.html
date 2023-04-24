@@ -94,21 +94,44 @@
     <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
         <h3 class="text-start fs-5">Chapter 6.1 : Curl and Divergence</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
-        <h3 class="text-start mb-4 fs-6">
-        <br><br>Here are the definitions for Curl and Divergence:
-        <br><br>Where \(\vec{i}\), \(\vec{j}\), and \(\vec{k}\), are the unit base vectors.
-        <br><br>Let's also determine a couple of pleasant facts that use the curl of a vector field.
-        <br><br>Facts
-        <br><br>The physical interpretation for divergence represents the rate of change at which a vector field flows into or out of a point in \(\left(x,y \right)\) \(\mathbb{R}^2\) or \(\left(x,y,z \right)\) \(\mathbb{R}^3\). We can think of fluid vectors. If we have an incompressible fluid, the divergence is \(0\) because the liquid does not flow in or out of a specific source (the fluid is not being compressed). 
+        <h3 class="text-start mb-4 fs-6">Here are the definitions for Curl and Divergence:</h3>
+        <h3 class="text-start mb-0 fw-bold fs-6">Curl</h3>
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\({\mathop{\rm curl}\nolimits} \vec F = \left( {{R_y} - {Q_z}} \right)\vec i + \left( {{P_z} - {R_x}} \right)\vec j + \left( {{Q_x} - {P_y}} \right)\vec k\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Where \(\vec{i}\), \(\vec{j}\), and \(\vec{k}\), are the unit base vectors.</h3>
+        <br>
+        <h3 class="text-start mb-0 fw-bold fs-6">Divergence</h3>
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle {\mathop{\rm div}\nolimits} \vec F = \nabla \cdot \vec F\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Let's also determine a couple of pleasant facts that use the curl of a vector field.</h3>
+        <h3 class="text-start mb-0 fw-bold fs-6">Facts</h3>
+        <div class="fact">
+            <h3 class="text-start mb-0 fs-6">
+            <ol>
+                <li>If a function f(x, y, z) possesses continuous second-order partial derivatives, then the curl of the gradient of \(f (\nabla f)\) = \(\vec{0}\). This fact can be easily verified by substituting the definition of the derivative. I'll leave it up to you to verify.</li>
+                <li>If a vector field F is "conservative," then it has a special property that makes its curl (a measure of how much the field "rotates" at each point) equal to zero. This is a direct result of what it means for a vector field to be "conservative," and the previous fact we talked about.</li>
+                <li>If \(\vec{F}\) is defined in all of \(\mathbb{R}^3\) where all first order partial derivatives are continuous and \(curl\vec{F} = \vec{0}\) then \(\vec{F}\) is a conservative vector field.</li>
+            </ol>
+        </h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">The physical interpretation for divergence represents the rate of change at which a vector field flows into or out of a point in \(\left(x,y \right)\) \(\mathbb{R}^2\) or \(\left(x,y,z \right)\) \(\mathbb{R}^3\). We can think of fluid vectors. If we have an incompressible fluid, the divergence is \(0\) because the liquid does not flow in or out of a specific source (the fluid is not being compressed). 
         <br><br>The physical interpretation for a curl of a vector field can be described as the swirling motion of water in a pool. For example, If a vector field shows the water moving in a circular motion and we place a toy boat in the pool, it will tend to rotate. The amount of rotation will depend on the position and orientation of the object. Thus, the curl of the vector field is expected to be a vector with different values. 
         <br><br>We also have the following relationship between curl and divergence:
-        <br><br>The next topic we will overview is the Laplace Operator, which is described as the following:
-        <br><br>This operator is especially useful in heat transfer and fluid flow. 
+        <h3 class="text-center mb-4 fs-6">\({\mathop{\rm div}\nolimits} \left( {{\mathop{\rm curl}\nolimits} \vec F} \right) = 0\)</h3>
+        <h3 class="text-start mb-4 fs-6">The next topic we will overview is the Laplace Operator, which is described as the following:
+        <h3 class="text-center mb-4 fs-6">\({\nabla ^2} = \nabla \centerdot \nabla\)</h3>
+        <h3 class="text-start mb-4 fs-6">This operator is especially useful in heat transfer and fluid flow. 
         <br><br>Here are the following forms of Greens Theorem that uses Curl and Divergence:
-        <br><br>Given the parameterized curve:
-        <br><br>And the outward unit normal:
-        <br><br>Here is a sketch illustrating the outward unit normal for a given curve \(C\) at various points:
-        </h3>
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle \oint_{C}{{\vec F\cdot d\,\vec r}} = \iint\limits_{D}{{\left( {{\mathop{\rm curl}\nolimits} \vec F} \right)\cdot \vec k\,dA}}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Given the parameterized curve:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\vec r\left( t \right) = x\left( t \right)\vec i + y\left( t \right)\vec j\)</h3>
+        <h3 class="text-start mb-4 fs-6">And the outward unit normal:</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \vec n = \frac{{y'\left( t \right)}}{{\left\| {\vec r'\left( t \right)} \right\|}}\vec i - \frac{{x'\left( t \right)}}{{\left\| {\vec r'\left( t \right)} \right\|}}\vec j\)</h3>
+        <h3 class="text-start mb-4 fs-6">Here is a sketch illustrating the outward unit normal for a given curve \(C\) at various points:</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

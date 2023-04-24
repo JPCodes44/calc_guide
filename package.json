@@ -1,5 +1,10 @@
 {
   "devDependencies": {
-    "prettier": "2.8.4"
+    "prettier": "2.8.4",
+    "vite": "^4.2.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "three": "^0.151.3"
   }
 }

@@ -95,32 +95,47 @@
         <h3 class="text-start fs-5">Chapter 6.1 : Parametric Surfaces</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">Before delving into surface integrals, discussing the process of parameterizing a surface is essential. In the same way that we parameterized a curve using values of "\(t\)" from an interval \([a,b]\), we need to find a way to parameterize a surface.
-        <br><br>To write down the parametric equations of a surface, the steps are as follows: 
-        <br><br><ol>
+        <br><br>To write down the parametric equations of a surface, the steps are as follows:
+        <div class="fact">
+        <ol>
             <li>Determine the parametric equations from the given equation</li>
             <li>Sub the parametric equations corresponding to each component in the parametric representation</li>
         </ol>
-        <br>Let's look at an example:
-        <br><br>To determine a surface from a parametric representation, the steps are as follows:
-        <br><br><ol>
+    </div>
+    <br>
+        To determine a surface from a parametric representation, the steps are as follows:
+        <div class="fact">
+        <ol>
                 <li>Write down the parametric equations in terms of \(u\) and \(v\) equal to \(x\) and \(y\) (or whatever variables are in the parametric equation).</li>
                 <li>Determine the surface given from those parametric equations.</li>
                 <li>Write the equation for the determined quadric surface in \(x\), \(y\) or \(z\) and sub in the parametric representations (as seen in your equations)</li>
                 <li>Solve for \(U\) and \(V\).</li>
                 <li>Write the final equation in terms of \(x\), \(y\), and \(z\).</li>
             </ol>
-        <br>We will mostly be writing parametric equations of a surface rather than identifying the surface.
-        <br><br>Let's take a look at some examples of this:
+        </div>
+        We will mostly be writing parametric equations of a surface rather than identifying the surface.
         <br><br>In general, here are the definitions for parametric representations:
-        <br><br>Let's look at some applications of these representations:
-        <br><br>Let's suppose we have the following:
-        <br><br>If we keep the value of \(v = v_0\) fixed, then the vector \(\vec{r_u}\left(u,v_0 \right)\) will be tangent to the curve given by \(\vec{r} \left(u,v_0 \right)\) as long as \(\vec{r_u} \left(u,v_0 \right)\) is not equal to zero. Similarly, if we keep the value of \(u = u_0\) fixed, then the vector \(\vec{r_v} \left(u_0,v \right)\) will be tangent to the curve given by \(\vec{r}(u_0,v)\) as long as \(\vec{r_v} \left(u_0,v \right)\) is not equal to zero. Therefore, both \(r_u \left(u_0,v_0 \right)\) and \(\vec{r_v} \left(u_0,v_0 \right)\) (as long as neither one is the zero vector) will be tangent to the surface \(S\) given by \(\vec{r} \left(u,v \right)\) at the point \(\left(u_0,v_0 \right)\), and the tangent plane to the surface at \(\left(u_0,v_0 \right)\) will be the plane containing both \(\vec{r_u} \left(u_0,v_0 \right)\) and \(\vec{r_v} \left(u_0,v_0 \right)\).
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\begin{align*}z &= f\left( {x,y} \right)\hspace{0.25in}\,\, \Rightarrow \hspace{0.25in}\,\,\vec r\left( {x,y} \right) = x\,\vec i + y\,\vec j + f\left( {x,y} \right)\vec k\\ x & = f\left( {y,z} \right)\hspace{0.25in}\,\, \Rightarrow \hspace{0.25in}\,\,\vec r\left( {y,z} \right) = f\left( {y,z} \right)\,\vec i + y\,\vec j + z\,\vec k\\ y & = f\left( {x,z} \right)\hspace{0.25in}\,\, \Rightarrow \hspace{0.25in}\,\,\vec r\left( {x,z} \right) = x\,\vec i + f\left( {x,z} \right)\,\vec j + z\,\vec k\end{align*}\)</h3>
+        </div>
+        Let's suppose we have the following proof,</h3>
+        <h3 class="text-start fw-bold mb-0 fs-6">Proof</h3>
+        <div class="proof">
+        <h3 class="text-start mb-4 fs-6">Let's suppose we have the tangent plane to the parametric surface \(S\) given by,</h3>
+        <h3 class="text-center mb-4 fs-6">\(\vec r\left( {u,v} \right) = x\left( {u,v} \right)\vec i + y\left( {u,v} \right)\vec j + z\left( {u,v} \right)\vec k\)</h3>
+        <h3 class="text-start mb-4 fs-6">First, define</h3>
+        <h3 class="text-center mb-4 fs-6">\(\begin{align*}{{\vec r}_u}\left( {u,v} \right) & = \frac{{\partial x}}{{\partial u}}\left( {u,v} \right)\vec i + \frac{{\partial y}}{{\partial u}}\left( {u,v} \right)\vec j + \frac{{\partial z}}{{\partial u}}\left( {u,v} \right)\vec k\\ {{\vec r}_v}\left( {u,v} \right) & = \frac{{\partial x}}{{\partial v}}\left( {u,v} \right)\vec i + \frac{{\partial y}}{{\partial v}}\left( {u,v} \right)\vec j + \frac{{\partial z}}{{\partial v}}\left( {u,v} \right)\vec k\end{align*}\)</h3>
+        <h3 class="text-start mb-0 fs-6">If we keep the value of \(v = v_0\) fixed, then the vector \(\vec{r_u}\left(u,v_0 \right)\) will be tangent to the curve given by \(\vec{r} \left(u,v_0 \right)\) as long as \(\vec{r_u} \left(u,v_0 \right)\) is not equal to zero. Similarly, if we keep the value of \(u = u_0\) fixed, then the vector \(\vec{r_v} \left(u_0,v \right)\) will be tangent to the curve given by \(\vec{r}(u_0,v)\) as long as \(\vec{r_v} \left(u_0,v \right)\) is not equal to zero. Therefore, both \(r_u \left(u_0,v_0 \right)\) and \(\vec{r_v} \left(u_0,v_0 \right)\) (as long as neither one is the zero vector) will be tangent to the surface \(S\) given by \(\vec{r} \left(u,v \right)\) at the point \(\left(u_0,v_0 \right)\), and the tangent plane to the surface at \(\left(u_0,v_0 \right)\) will be the plane containing both \(\vec{r_u} \left(u_0,v_0 \right)\) and \(\vec{r_v} \left(u_0,v_0 \right)\).
         <br><br>This fact is true for any point where neither \(r_u\) nor \(r_v\) is the zero vector. Furthermore, if \(r_u \times r_v\) is not equal to zero, then the vector \(r_u \times r_v\)  can be used as the normal vector to the surface \(S\). This is important because we can use the normal vector to write down the equation of a tangent plane.
-        <br><br>Let's look at an example.
-        <br><br>Another application of parametric surfaces is calculating the surface area. 
+        </h3>
+    </div>
+    <h3 class="text-start mb-4 fs-6">Another application of parametric surfaces is calculating the surface area. 
         <br><br>Suppose we have the parametric surface \(S\) given by,
-        <br><br>We will need to calculate the surface area of the parametric surface \(S\) by using the following formula involving \(r_u\) and \(r_v\).
-        <br><br>Let's look at an example:
+        <h3 class="text-center mb-4 fs-6">\(\vec r\left( {u,v} \right) = x\left( {u,v} \right)\vec i + y\left( {u,v} \right)\vec j + z\left( {u,v} \right)\vec k\)</h3>
+        <h3 class="text-start mb-4 fs-6">We will need to calculate the surface area of the parametric surface \(S\) by using the following formula involving \(r_u\) and \(r_v\).</h3>
+        <div class="fact">
+            <h3 class="text-center mb-0 fs-6">\(\displaystyle A = \iint\limits_{D}{{\left\| {\,{{\vec r}_u} \times {{\vec r}_v}} \right\|\,dA}}\,\)</h3>
+        </div>
     </h3>
     </div>
 

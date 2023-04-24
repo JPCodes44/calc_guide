@@ -97,10 +97,16 @@
         <h3 class="text-start mb-4 fs-6">The following discussion will focus on integrating functions over a surface \(S\) in three-dimensional space. First, having a visual representation of the surface \(S\) is helpful since the notation can become very complex. Here is a sketch of some surface \(S\):
         <br><br>The surface \(S\) lies above some region in the 2D plane \(xy\). Note that the shape on the \(xy\) plane could be anything. 
         <br><br>To see an example, let's look at the surface integral \(S\) given by \(z=g \left(x,y \right)\), which is:
-        <br><br>Note that \(dS\) and \(dA\) represent different integrals, where \(dS\) represents a surface integral, and \(dA\) represents a standard double integral.
+        <div class="fact">
+            <h3 class="text-center mb-2 mt-2 fs-6">\(\displaystyle \iint\limits_{S}{{f\left( {x,y,z} \right)\,dS}} = \iint\limits_{D}{{f\left( {x,y,g\left( {x,y} \right)} \right)\sqrt {{{\left( {\frac{{\partial g}}{{\partial x}}} \right)}^2} + {{\left( {\frac{{\partial g}}{{\partial y}}} \right)}^2} + 1} \,dA}}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Note that \(dS\) and \(dA\) represent different integrals, where \(dS\) represents a surface integral, and \(dA\) represents a standard double integral.
         <br><br>As you might've seen before, the integral tends to become a little bit messy after computing the square root, so we will define another definition for the surface integral:
-        <br><br>Given the parameterization:
-        <br><br>Let's work on some examples.
+        <div class="fact">
+            <h3 class="text-center mb-1 mt-2 fs-6">\(\displaystyle \iint\limits_{S}{{f\left( {x,y,z} \right)\,dS}} = \iint\limits_{D}{{f\left( {\vec r\left( {u,v} \right)} \right)\left\| {{{\vec r}_u} \times {{\vec r}_v}} \right\|\,dA}}\)</h3>
+        </div>
+        <h3 class="text-start mb-4 fs-6">Given the parameterization:</h3>
+        <h3 class="text-center mb-1 mt-2 fs-6">\(\vec r\left( {x,y} \right) = x\vec i + y\vec j + g\left( {x,y} \right)\vec k\)</h3>
         </h3>
     </div>
 

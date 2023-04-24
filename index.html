@@ -12,6 +12,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- three.js/interactive graphs -->
+    <script type="module" src="js/build/three.module.js"></script>
+    <script type="module" src="js/myscript.js"></script>
+
     <title>Calc Guide</title>
   </head>
   <body style="height:2000px">
@@ -90,9 +94,26 @@
                 </button>
             </nav>
         </div>
-    <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
+    <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5" id="container">
         <h3 class="text-start mb-4 fs-5">Welcome to my online math tutorials and notes. The intent of this site is to provide a complete set of free online notes and/or tutorials for anyone looking to get a better grasp on Calculus 3 and AI (Machine Learning concepts). I've tried to write the notes/tutorials in such a way that they should be accessible to anyone wanting to learn the subject regardless of whether you are in my classes or not. However it is assumed that you've got prior knowledge in the standard set of prerequisite material needed for that class. In other words, it is assumed that you know Algebra, Trig, Caclulus 1, and Calculus 2 prior to reading the Calculus 3 notes. The assumptions about your background that I've made are given with each description below.</h3>
-        <h3 class="text-start mb-4 fs-5">Here is a complete listing of all the subjects that are currently available on this site as well as brief descriptions of each.</h3>
+        <h3 class="text-start mb-0 fs-5">Here is a complete listing of all the subjects that are currently available on this site as well as brief descriptions of each.</h3>
+        <br>
+        <div class="sliderHolder">
+        <div class="sliderContainer">
+            <input type="range" id="width" value="0" min="1" max="100" step="0.1" class="slider">
+            <p>\(\vec{x}\): <span id="value"></span></p>
+        </div>
+        <div class="sliderContainer">
+            <input type="range" id="height" value="0" min="1" max="100" step="0.1" class="slider">
+            <p>\(\vec{y}\): <span id="valueHeight"></span></p>
+        </div>
+        <div class="sliderContainer">
+            <input type="range" id="depth" value="0" min="1" max="100" step="0.1" class="slider">
+            <p>\(\vec{z}\): <span id="valueDepth"></span></p>
+        </div>
+    </div>
+
+        <h3 class="text-center"><canvas id="canvas-container"></canvas></h3>
     </div>
 
     <hr class="hr-blurry" style="background-color: rgb(141, 205, 251); width: 70%;">
@@ -105,7 +126,7 @@
             <dl class="row">
                 <dt class="col-sm-3 text-primary"><a href="pages/3-dimensional_space.html">3-Dimensional Space</a></dt>
                 <dd class="col-sm-9">3-Dimensional space focuses on the correlations between vector surfaces and equations of lines and Planes.</dd>
-            
+                
                 <dt class="col-sm-3">Subjects</dt>
                 <dd class="col-sm-9">
                 <p>
@@ -115,7 +136,7 @@
                         <li>Quadratic Surfaces</li>
                         <li>Functions of Multiple Variables</li>
                         <li>Vector Functions & Calculus</li>
-                        <li>Tangent, Normal and Binormal Vectors</li>
+                        <li>Tangent, Normal and Bi-normal Vectors</li>
                         <li>Curvature</li>
                         <li>Velocity and acceleration</li>
                         <li>Cylindrical Coordinates</li>
@@ -123,7 +144,7 @@
                     </ol>
                 </dd>
             
-                <dt class="col-sm-3">Reccomendations</dt>
+                <dt class="col-sm-3">Recommendations</dt>
                 <dd class="col-sm-9">This is just the beginning. However it is one of the most important units as we will be constantly using all of these coordinate systems, especially in \(\mathbb{R}^3\).</dd>
             
             </dl>
@@ -132,7 +153,7 @@
             <div class="container-lg p-3 p-sm-3 p-md-4 p-lg-5">
             <dl class="row">
                 <dt class="col-sm-3 text-primary"><a href="pages/partial_derivatives.html">Partial Derivatives</a></dt>
-                <dd class="col-sm-9">This subject focuses on the applications and realtionships between gradients, chain rule within AI.</dd>
+                <dd class="col-sm-9">This subject focuses on the applications and relationships between gradients, chain rule within AI.</dd>
             
                 <dt class="col-sm-3">Subjects</dt>
                 <dd class="col-sm-9">
@@ -148,7 +169,7 @@
                     </ol>
                 </dd>
             
-                <dt class="col-sm-3">Recomendations</dt>
+                <dt class="col-sm-3">Recommendations</dt>
                 <dd class="col-sm-9">Not sponsored, but watching 3Blue1Brown on Gradient Decent is definitely worth for AI conceptualization.</dd>
             
 
@@ -167,14 +188,14 @@
                     <ol>
                         <li>Tangent Planes</li>
                         <li>Normal Lines</li>
-                        <li>Realtive Extrema</li>
+                        <li>Relative Extrema</li>
                         <li>Absolute Extrema</li>
                         <li>Optimization</li>
                         <li>Lagrange Multipliers</li>
                     </ol>
                 </dd>
             
-                <dt class="col-sm-3">Recomendations</dt>
+                <dt class="col-sm-3">Recommendations</dt>
                 <dd class="col-sm-9">Honestly, Mathemation has a really good video on Lagrange Multipliers. Shout out Zack Cramer.</dd>
                  
             </dl>
@@ -249,7 +270,7 @@
                     </ol>
                 </dd>
             
-                <dt class="col-sm-3">Recomendations</dt>
+                <dt class="col-sm-3">Recommendations</dt>
                 <dd class="col-sm-9">Make sure to split up the integration for each surface you cannot describe in other coordinate systems.</dd>
             
             </div>
@@ -260,9 +281,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="js/slider.js"></script>
 
   </body>
-  
-  <script src="js/myscript.js"></script>
 
 </html>

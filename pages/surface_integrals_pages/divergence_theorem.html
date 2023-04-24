@@ -95,8 +95,32 @@
         <h3 class="text-start fs-5">Chapter 6.5 : Divergence Theorem</h3>
         <hr class="hr-blurry" style="background-color: rgb(0, 22, 37); width: 100%;">
         <h3 class="text-start mb-4 fs-6">Okay, this part will explore the connection between surface and triple integrals. We'll use something called the Divergence Theorem to do this.
-        <br><br>Let \(E\) be a simple solid region with a positively oriented boundary \(S\). Let \(F\) be a vector field where its components contain continuous first-order partial derivatives. Then,
+        <h3 class="text-start fw-bold mb-4 fs-6">Divergence Theorem</h3>
+        <div class="fact">
+        <h3 class="text-start mb-4 fs-6">Let \(E\) be a simple solid region with a positively oriented boundary \(S\). Let \(F\) be a vector field where its components contain continuous first-order partial derivatives. Then,</h3>
+        <h3 class="text-center mb-4 fs-6">\(\displaystyle \iint\limits_{S}{{\vec F\centerdot d\vec S}} = \iiint\limits_{E}{{{\mathop{\rm div}\nolimits} \vec F\,dV}}\)</h3>
+    </div>
         <br><br>Let's look at some examples that utilize this theorem:
+        <div class="proof">
+            <h3 class="sameline text-start fw-bold fst-italic mb-4 fs-6">Example 1</h3>
+            <h3 class="sameline text-start mb-4 fs-6">Use the divergence theorem to evaluate \displaystyle \(\displaystyle \iint\limits_{S}{{\vec F\centerdot d\vec S}}\) where
+            <br>\(\vec F = xy\,\vec i - \frac{1}{2}{y^2}\,\vec j + z\,\vec k\) and the surface consists of the three surfaces, \(z = 4 - 3{x^2} - 3{y^2}\), \(1 \leq z \geq 4\) on the top, \({x^2} + {y^2} = 1\), \(0 \le z \le 1\) on the sides and \(z = 0\) on the bottom.</h3>
+            <details>
+                <summary class="show">
+                    Show Solution
+                </summary>
+                <hr>
+                <br>
+                <h3 class="text-start mb-4 fs-6">The region \(E\) for the triple integral is then the region enclosed by these surfaces. Note that cylindrical coordinates would be a perfect coordinate system for this region. If we do that here are the limits for the ranges.</h3>
+                <h3 class="text-center mb-4 fs-6">\(\begin{array}{c}0 \le z \le 4 - 3{r^2}\\ 0 \le r \le 1\\ 0 \le \theta  \le 2\pi \end{array}\)</h3>
+                <h3 class="text-start mb-4 fs-6">We'll also need the divergence of the vector field so let's get that.</h3>
+                <h3 class="text-center mb-4 fs-6">\({\mathop{\rm div}\nolimits} \vec F = y - y + 1 = 1\)</h3>
+                <h3 class="text-start mb-4 fs-6">The integral is then,</h3>
+                <h3 class="text-center mb-4 fs-6">\(\begin{align*}\iint\limits_{S}{{\vec F\centerdot d\vec S}} & = \iiint\limits_{E}{{{\mathop{\rm div}\nolimits} \vec F\,dV}}\\ &  = \int_{{\,0}}^{{\,2\pi }}{{\int_{{\,0}}^{{\,1}}{{\int_{{\,0}}^{{4 - 3{r^2}}}{{r\,dz}}\,dr}}\,d\theta }}\\ &  = \int_{{\,0}}^{{\,2\pi }}{{\int_{{\,0}}^{{\,1}}{{4r - 3{r^3}\,dr}}\,d\theta }}\\ &  = \int_{{\,0}}^{{\,2\pi }}{{\left. {\left( {2{r^2} - \frac{3}{4}{r^4}} \right)} \right|_0^1\,d\theta }}\\ &  = \int_{{\,0}}^{{\,2\pi }}{{\frac{5}{4}\,d\theta }}\\ &  = \frac{5}{2}\pi \end{align*}\)</h3>
+            </details>
+            </h3>
+
+        </div>
         </h3>
     </div>
 
